@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primeiro Desafio</title>
+  </head>
+
+  <body>
+    <h1>Primeiro Desafio</h1>
+
+    <script>
+      // pedir para o usuario digitar um número
+
+      // converter em número inteiro
+
+      // pedir para o usuário digitar outro número
+
+      // converter em número inteiro
+
+      // mostrar a divisão concatenando com o texto "a divisão é: "
+
+      // mostrar a multiplicação concatenando com o texto "a multiplicação é: "
+
+      // mostrar a subtração concatenando com o texto "a subtração é: "
+
+      // mostrar a soma concatenando com o texto "a soma é: "
+
+      // lembrar que preciso digitar em letras minusculas para facilitar, pois se eu digitar com letras maisculas e depois tentar digitar com letras minusculas não irá funcionar...
+
+      // outra coisa, essa forma de tranformar texto em número é só aqui no javascript em outras linguagens tem que ver a sintaxe
+
+      // lembrar sempre que ao usar Number, parseInt ou parseFloat, o que estou fazendo é pegando a minha var e transformando meu texto em número, então eu declaro a var e depois atribuo um valor a essa var... é o que esta acontecendo abaixo
+
+      // depois que eu declaro a var uma vez, não preciso declara-la novamente, só preciso atribuir a ela um valor
+
+      // aqui preciso colocar entre parenteses devido a ordem de precedência, já na divisão e multiplicação não há necessidade, pois elas vem antes da concatenação
+
+      let numero1 = prompt("Digite um número");
+      numero1 = parseInt(numero1);
+
+      let numero2 = prompt("Dígite outro número");
+      numero2 = parseInt(numero2);
+
+      alert("A divisão é: " + numero1 / numero2);
+
+      alert("A multiplicação é: " + numero1 * numero2);
+
+      alert("A subtração é: " + (numero1 - numero2));
+
+      alert("A soma é: " + (numero1 + numero2));
+    </script>
+  </body>
+</html>

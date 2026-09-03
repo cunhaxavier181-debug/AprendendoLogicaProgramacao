@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>break vs continue</h1>
+
+    <script>
+      for (let i = 1; i < 10; i++) {
+        console.log(i);
+        if (i === 5) {
+          break; // aqui ele para a contagem até o número que eu determinar acima
+        }
+      }
+      console.log("fim do loop com break");
+
+      for (let i = 1; i < 10; i++) {
+        if (i === 5) {
+          continue; // aqui ele pula o número escolhido acima e continua o loop de um em um até o determinado valor da minha variável
+        }
+        console.log(i);
+      }
+      console.log("fim do loop continue");
+
+      console.log("--------  loop while");
+
+      let x = 1;
+
+      while (x < 10) {
+        console.log(x);
+        if (x === 5) {
+          break;
+        }
+        x++;
+      }
+      console.log("fim do loop while com break");
+
+      x = 1;
+
+      while (x < 10) {
+        if (x === 5) {
+          x++;
+          continue; // tomar muito cuidado com loops infinitos, VAI TRAVAR A MÁQUINA, então esse código aqui gerou um loop infinito, pois se meu x valer 4 ele irá somar mais um quando chegar ao x++ e vai verificar que x === 5, e ficará nisso eternamente...PARA RESOLVER O PROBLEMA É BEM SIMPLES, TENHO QUE COLOCAR O X++ ANTES E DEPOIS DO continue SÓ ASSIM FUNCIONARÁ CORRETAMENTE, OUTRA COISA É QUE PRECISO TAMBÉM COLOCAR O console.log(x); DEPOIS DO continue e antes do último x++
+        }
+        console.log(x);
+        x++;
+      }
+      console.log("fim do loop while com continue");
+    </script>
+  </body>
+</html>

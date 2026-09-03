@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 01</title>
+  </head>
+
+  <body>
+    <h1>Operadores lógicos</h1>
+
+    <script>
+      // aprendendo a tabela verdade, no caso aqui estou vendo o (E e o OU), o E é representado pelo && e o OU é representado pelo ||
+
+      let n1 = parseFloat(prompt("digite a nota 1")); // 10
+      let n2 = parseFloat(prompt("digite a nota 2")); // 0
+
+      let media = (n1 + n2) / 2;
+
+      // aqui estou querendo saber se usando o (E) && essa condição é verdade, e para que seja verdade tudo aqui tem que ser true, se qualquer uma dessas condições for falsa, meu Boolean será falso
+
+      alert("Está aprovado? " + (media > 4 && n1 > 0 && n2 > 0));
+
+      // já nesse exemplo abaixo, como eu tenho um || (OU) ele se torna verdade independemente do valor que eu colocar, porque em algum caso ali tem true
+
+      alert("Está aprovado? " + ((media > 4 && n1 > 0) || n2 > 0));
+    </script>
+  </body>
+</html>

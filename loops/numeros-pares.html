@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>loops - números pares</h1>
+
+    <!-- um loop SEMPRE precisa ter uma condição de saída -->
+
+    <!-- Loop for: ideal para quando sabemos exatamente quantas vezes o loop será executado -->
+
+    <!-- Loop while: ideal para quando não sabemos quantas vezes o loop será executado. Além disso, se a condição for false, não executa nenhuma vez -->
+
+    <!-- Loop do...while: se parece com o loop while, mas o código é executado ao menos uma vez, mesmo que a condição seja inicialmente false -->
+
+    <script>
+      // pedir para o usuário digitar um número e mostrar todos os números pares do 2 (inclusive o próprio 2) até o número que o usuário digitou
+
+      // Sabemos quantas vezes o loop será executado?
+
+      // posso usar o loop while ou o do...while, mas lembrar que no do...while, ele será executado pelo menos uma vez, mesmo que o usuário digite o número 1 por exemplo... já no loop while isso não acontece...então por isso usarei neste exemplo o loop do...while
+
+      let n = parseInt(prompt("dígite um número"));
+
+      let i = 2;
+
+      // enquanto o (i <= n)
+
+      // while (i <= n) {
+      //   console.log(i);
+      //   i += 2;
+      // }
+
+      do {
+        console.log(i);
+        i += 2;
+      } while (i <= n);
+    </script>
+  </body>
+</html>

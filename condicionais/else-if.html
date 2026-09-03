@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 04</title>
+  </head>
+
+  <body>
+    <h1>Exercicio 04</h1>
+
+    <script>
+      // se o meu primeiro if for true, será executado o que estiver dentro desse bloco e ele já irá para o alert ("fim do programa"); , caso false, será executado o else if, se ele for true será executado o que estiver dentro dele e ele irá para o alert("fim do programa"); , caso também seja false, será executado o else, então para que seja executado o else, os dois primeiros tem que ser false
+
+      let n1 = parseFloat(prompt("dígite a nota 1"));
+      let n2 = parseFloat(prompt("dígite a nota 2"));
+
+      if (isNaN(n1) || isNaN(n2)) {
+        alert("dígite apenas números");
+      } else if (n1 < 0 || n2 < 0 || n1 > 10 || n2 > 10) {
+        alert("Dígite apenas números 0 e 10");
+      } else {
+        let media = (n1 + n2) / 2;
+
+        if (media > 4 && n1 > 0 && n2 > 0) {
+          // bloco verdade
+          alert("APROVADO");
+        } else {
+          // bloco mentira
+          alert("REPROVADO");
+        }
+      }
+
+      alert("fim do programa");
+    </script>
+  </body>
+</html>

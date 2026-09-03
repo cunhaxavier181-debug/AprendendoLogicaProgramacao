@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Dados - jogados</h1>
+
+    <script>
+      let quantasVezesDadosJogados = 0;
+      let quantasVezesASomaEhPar = 0;
+
+      while (true) {
+        let dados1 = parseInt(Math.random() * 6) + 1;
+        let dados2 = parseInt(Math.random() * 6) + 1;
+
+        console.log(
+          dados1,
+          dados2,
+          quantasVezesDadosJogados,
+          quantasVezesASomaEhPar,
+        );
+        quantasVezesDadosJogados++;
+
+        if ((dados1 + dados2) % 2 === 0) {
+          quantasVezesASomaEhPar++;
+        }
+
+        if (quantasVezesASomaEhPar >= 10) {
+          break;
+        }
+      }
+      console.log(
+        "Os dados foram jogados " + quantasVezesDadosJogados + " vezes",
+      );
+      //
+      // esse problema terá que ser muito bem explicado..VAMOS LÁ: 1° criei duas variáveis que me deram quantas vezes os dados foram jogados (quantasVezesDadosJogados) depois quantas vezes a soma desses dados é par (quantasVezesASomaEhPar)...depois dentro o while criei mais duas variáveis (dados1 e dados2) e fiz o Math.random e no meu console.log distribui da seguinte forma: 1° coluna é o dados1, 2° coluna dados2, 3° coluna quantasVezesDadosJogados, 4° coluna quantasVezesASomaEhPar, e essa última coluna não pode passar de 10 vezes que a soma deu par, quando chegar a 9 vezes ele encerra o loop...É ISSO QUE O CÓDIGO ACIMA DESCREVE... FAZER MAIS UMA VEZ SOZINHO PARA EU FIXAR MELHOR ESSA INFORMAÇÃO.
+    </script>
+  </body>
+</html>

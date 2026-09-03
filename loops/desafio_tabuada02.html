@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio</title>
+
+    <style>
+      /* ====================================================================
+       Pedir para o usuário digitar um número e mostrar a tabuada de 1 até 
+       1000 desse número, colocando uma linha divisória ou quebra de linha 
+       sempre que mudar de dezena 
+       ==================================================================== */
+    </style>
+  </head>
+
+  <body>
+    <h1>Desafio Tabuada</h1>
+
+    <script>
+      // nesse if que está dentro do meu for estou colocando uma condição que é: se o resto da minha divisão da variável i por 10 for igual a 0, coloque uma linha horizontal
+      // se caso eu queira colocar a minha variável i começando com 0, eu preciso colocar no meu if o seguinte (i % 10 === 0 && i > 0) isso fará com que essa condição seja falsa, então o meu primeiro resto 0 não terá linha horizontal nenhuma, somente apartir do número 10
+
+      let n = parseFloat(prompt("dígite um número"))
+
+      if (!isNaN(n)){
+      for (let i = 0; i <= 1000; i++){
+        document.write(n + " x " + i + ": " + n * i + "<br>")
+
+        if(i % 10 === 0 && i > 0) {
+          document.write("<hr>")
+        }
+      }
+    } else{
+      alert("dígite apenas números")
+    }
+    </script>
+    </script>
+  </body>
+</html>

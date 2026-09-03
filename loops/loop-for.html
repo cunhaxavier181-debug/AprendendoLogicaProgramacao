@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loop for</title>
+  </head>
+
+  <body>
+    <h1>loop for</h1>
+
+    <script>
+      // usando o loop for eu já crio dentro dos parentes a variável, a condição e também a saída desse loop, lembrando de colocar ponto e vírgula (;) entre um e outro.... é muito comum usar a letra i para representar essa variável (no mundo real se usa bastante)
+
+      // o loop for é usado quando eu sei exatamente quantas vezes o loop será executado
+
+      let n = parseFloat(prompt("dígite um número"));
+
+      if (!isNaN(n)) {
+        for (let i = 0; i <= 10; i++) {
+          document.write(n + " x " + i + " : " + n * i + "<br>");
+        }
+        document.write("saiu do loop");
+      } else {
+        alert("dígite apenas número");
+      }
+    </script>
+  </body>
+</html>

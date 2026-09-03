@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>loop - dados</h1>
+
+    <script>
+      // jogue um dado e guarde o número
+      // jogue o outro dado e gaurde o número
+      // crie um contador = 0
+      // enquanto o dado1 for diferente do dado2
+      // some um ao conatados
+      // jogue novamente os dados
+
+      // mostre na tela qual o número que se repetiu e quantas vezes os dados foram jogados
+
+      // vamos lá: esse Math.random() faz com que eu crie um número randomico, então eu coloco Math.random() * 6 + 1 para ele criar números próximos de 5.999999 alguma coisa, porém ele nunca passa de 6, aí eu coloco antes de tudo isso o parseInt para que ele transforme esse meu número randomico em número inteiro
+
+      // abaixo eu sobreescrevi a minha variável, martelando um número fixo nela, com isso o meu while só executa uma vez o meu comando, mesmo ele sendo true, pois forcei isso quando defini um número para minha variavel em vez de deixar randomico
+
+      let dado1 = parseInt(Math.random() * 6 + 1);
+      let dado2 = parseInt(Math.random() * 6 + 1);
+
+      dado1 = 2;
+      dado2 = 2;
+
+      let contador = 1;
+
+      // enquanto os meus dados não forem iguais, eu faço jogar novamente, isso de forma automatica
+
+      // se while (dado1 !== dado2) for true na primeira vez, nada que esta dentro será feito, só se for false, aí continua
+
+      while (dado1 !== dado2) {
+        console.log(dado1, dado2);
+        contador++;
+        dado1 = parseInt(Math.random() * 6 + 1);
+        dado2 = parseInt(Math.random() * 6 + 1);
+      }
+      console.log(
+        "Os dados foram jogados " +
+          contador +
+          " x vezes. E o número repetido foi o " +
+          dado1,
+      );
+
+      console.log("-----------");
+
+      // abaixo eu sobreescrevi a minha variável, martelando um número fixo nela, com isso o meu do...while vai se repetir até que essa minha condição seja falsa,(mesmo ela sendo falsa de 1° vez, ele repetirá mais uma vez) por isso a diferença no console.log...LEMBRAR DE VER ISSO NO CONSOLE.LOG PARA QUE EU NÃO FIQUE PERDIDO, VENDO POR LÁ DÁ PARA SABER EXATAMENTE A DIFERENÇA
+
+      dado1 = parseInt(Math.random() * 6 + 1);
+      dado2 = parseInt(Math.random() * 6 + 1);
+
+      dado1 = 2;
+      dado2 = 2;
+
+      contador = 1;
+
+      do {
+        console.log(dado1, dado2);
+        contador++;
+        dado1 = parseInt(Math.random() * 6 + 1);
+        dado2 = parseInt(Math.random() * 6 + 1);
+      } while (dado1 !== dado2);
+
+      console.log(
+        "Os dados foram jogados " +
+          contador +
+          " x vezes. E o número repetido foi o " +
+          dado1,
+      );
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio</title>
+  </head>
+
+  <body>
+    <h1>Desafio</h1>
+
+    <script>
+      // se eu mudar de true para false, minha condição muda automaticamente
+
+      //  if (media > 4 && n1 > 0 && n2 > 0) aqui se qualquer coisa for diferente disso, ele será REPROVADO, é isso
+
+      let n1 = parseFloat(prompt("dígite a nota 1"));
+      let n2 = parseFloat(prompt("dígite a nota 2"));
+
+      let media = (n1 + n2) / 2;
+
+      if (media > 4 && n1 > 0 && n2 > 0) {
+        alert("APROVADO");
+      } else {
+        alert("REPROVADO");
+      }
+    </script>
+  </body>
+</html>

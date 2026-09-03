@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio</title>
+  </head>
+
+  <body>
+    <h1>Desafio Tabuada</h1>
+
+    <script>
+      // aqui eu acrescentei um if com a seguinte negação ... if (!isNaN(n)), caso a pessoa coloque uma letra ou qualquer outra coisa que não seja um número, ela irá direto para o else com o seguinte alert("dígite apenas número"), caso ela digite um número, execute a tabuada daquele número que ela digitou
+
+      let n = parseFloat(prompt("dígite um número"));
+
+      if (!isNaN(n)) {
+        let contador = 0;
+        while (contador <= 10) {
+          document.write(n + " x " + contador + " : " + n * contador + "<br>");
+          contador++;
+        }
+        document.write("fim do calculo");
+      } else {
+        alert("dígite apenas número");
+      }
+    </script>
+  </body>
+</html>

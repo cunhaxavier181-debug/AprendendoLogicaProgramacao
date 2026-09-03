@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo 2</title>
+  </head>
+
+  <body>
+    <h1>Segundo exemplo</h1>
+
+    <script>
+      // Number(converte qualquer numero), parseInt(), parseFloat()
+
+      // o sinal de + é um operador aritmético, também serve para fazer a concatenação, isso em javascript
+
+      // tudo que vem da interface gráfica do usuário é TEXTO, NÃO ESQUECER JAMAIS DISSO
+
+      // string (texto), número(decimal ou inteiro), boolean(verdade ou mentira),
+
+      // OPERADORES ARITMÉTICOS: soma(+), subtração (-), Multiplicação (*), Divisão (/), resto da divisão ou módulo(%)
+
+      // estou pegando o resultado do parseFloat(numero1) e reatribuindo na minha varial de numero1, pois tudo que vem da interface gráfica do usuário é TEXTO, por isso estou usando o parseFloat
+
+      // no partFloat eu posso usar letra, já no Number não, ele dará erro
+
+      // para que meu navegador some corretamente eu posso colocar entre () os meus valores do let, ou criar uma outra variável ( por exemplo variavel soma, fica muito mais fácil)
+
+      let numero1 = prompt("Digite um número");
+      numero1 = parseFloat(numero1);
+
+      let numero2 = prompt("Digite outro número");
+      numero2 = parseFloat(numero2);
+
+      let soma = numero1 + numero2;
+
+      alert("A soma é: " + soma);
+    </script>
+  </body>
+</html>
