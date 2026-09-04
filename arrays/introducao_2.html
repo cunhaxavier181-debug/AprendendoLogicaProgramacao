@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrays</title>
+  </head>
+
+  <body>
+    <h1>Arrays-1</h1>
+
+    <script>
+      let nomes = ["João", "Maria", "Daniel", "Ricardo", "Luciane"];
+
+      // aqui eu criei um prompt e abaixo acrescentei a minha variável nomeDigitado dentro da minha nomes.length, pois assim toda vez que eu quiser digitar um nome diferente no meu prompt, ele será somado a minha array.
+      let nomeDigitado = prompt("Dígite seu nome");
+
+      nomes[nomes.length] = nomeDigitado;
+
+      for (let i = 0; i < nomes.length; i++) {
+        document.write("nome: " + nomes[i] + "<br>");
+      }
+
+      document.write("A lista de nomes possui " + nomes.length + " elementos");
+    </script>
+  </body>
+</html>
