@@ -10,9 +10,22 @@
     <h1>Arrays</h1>
 
     <script>
-      // Arrays é como se fosse um gaveteiro onde tenho várias caixas (variáveis)...é como se fosse varias caixinhas (variáveis), porém é só uma única váriavel (arrays)...normalmente usamos nomes de váriaveis no plural para deixar claro que é um arrays
+      /* ======================================================================
+      Arrays é como se fosse um gaveteiro onde tenho várias caixas (variáveis) 
+      porém é só uma única váriavel (arrays)..normalmente usamos nomes de 
+      váriaveis no plural para deixar claro que é um arrays. 
 
-      // REGRA: meu número (indíce) sempre começará em zero e meu último sera sempre o número menos 1... Exemplo: 0,1,2,3,4,5... nesse exemplo meu número 5 será o indíce 4... ficará mais claro no código
+      REGRA: meu número (indíce) sempre começará em zero 
+      e meu último sera sempre o número menos 1... 
+      Exemplo: 0,1,2,3,4,5...nesse exemplo meu número 5 será o indíce 4... 
+      ficará mais claro no código. 
+
+      para não ficar confuso: pelo fato de eu colocar dentro de colchetes a minha 
+      variável i e usando o loop for, cada vez que o código roda, aparece o 
+      nome seguinte, no caso aqui os quatro nomes troquei o número quatro que 
+      estava antes por nomes.length, o que isso faz é: eu posso acrescentar 1000 
+      nomes e o meu código funionará normalmente 
+      ====================================================================== */
 
       let nomes = ["João", "Maria", "Daniel", "Beatriz", "Ricardo", "Luciane"]; // sintaxe literal...sempre que tiver colchetes após o sinal de igual, sempre será arrays
 
@@ -20,10 +33,6 @@
 
       for (let i = 0; i < nomes.length; i++)
         document.write("nome: " + nomes[i] + " <br>");
-
-      // para não ficar confuso: pelo fato de eu colocar dentro de colchetes a minha variável i e usando o loop for, cada vez que o código roda, aparece o nome seguinte, no caso aqui os quatro nomes
-
-      // troquei o número quatro que estava antes por nomes.length, o que isso faz é: eu posso acrescentar 1000 nomes e o meu código funionará normalmente
     </script>
   </body>
 </html>
