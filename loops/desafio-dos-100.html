@@ -10,9 +10,24 @@
     <h1>Desafio</h1>
 
     <script>
-      //
-      // Mostre na tela os números de 0 à 100 ignorando os múltiplos de 10.
-      // Porém, a cada interação, sorteie um número de 1 à 100. Se o número mostrado for divisível pelo número sorteado, interrompa o loop.
+      /* =================================================================== 
+        Mostre na tela os números de 0 à 100 ignorando os múltiplos de 10. 
+        Porém, a cada interação, sorteie um número de 1 à 100. Se o número 
+        mostrado for divisível pelo número sorteado, interrompa o loop.
+        
+        SÓ PARA DEIXAR BEM ENTENDIDO: para que o loop seja interropido, o meu 
+        console.log(i); tem que ser maior que o meu número sorteado para ser 
+        possível a divisão... 
+
+        EXEMPLO: o meu console.log (i) já estava no número 15 e o meu número 
+        sorteado foi 5, o loop acabará... MAS NÃO O INVERSO, QUE ISSO FIQUE 
+        BEM CLARO...se sair logo de cara o número 1 por exemplo, automaticamente 
+        o loop acaba...
+
+        outra coisa, no meu console.log(i) sempre pulará os múltiplos de 10, 
+        então o sorteio demora mais... quando chega no 10, pula e vai pro 11, 
+        quando chega no 20 pula e vai para o 21 e assim sucessivamente.
+        =================================================================== */
 
       for (let i = 0; i <= 100; i++) {
         if (i % 10 === 0) {
@@ -26,11 +41,6 @@
           break;
         }
       }
-      //
-      // SÓ PARA DEIXAR BEM ENTENDIDO: para que o loop seja interropido, o meu console.log(i); tem que ser maior que o meu número sorteado para ser possível a divisão...
-      // EXEMPLO: o meu console.log (i) já estava no número 15 e o meu número sorteado foi 5, o loop acabará... MAS NÃO O INVERSO, QUE ISSO FIQUE BEM CLARO...se sair logo de cara o número 1 por exemplo, automaticamente o loop acaba...
-
-      // outra coisa, no meu console.log(i) sempre pulará os múltiplos de 10, então o sorteio demora mais... quando chega no 10, pula e vai pro 11, quando chega no 20 pula e vai para o 21 e assim sucessivamente.
     </script>
   </body>
 </html>

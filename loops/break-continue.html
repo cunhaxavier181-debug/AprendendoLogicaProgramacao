@@ -43,12 +43,22 @@
       while (x < 10) {
         if (x === 5) {
           x++;
-          continue; // tomar muito cuidado com loops infinitos, VAI TRAVAR A MÁQUINA, então esse código aqui gerou um loop infinito, pois se meu x valer 4 ele irá somar mais um quando chegar ao x++ e vai verificar que x === 5, e ficará nisso eternamente...PARA RESOLVER O PROBLEMA É BEM SIMPLES, TENHO QUE COLOCAR O X++ ANTES E DEPOIS DO continue SÓ ASSIM FUNCIONARÁ CORRETAMENTE, OUTRA COISA É QUE PRECISO TAMBÉM COLOCAR O console.log(x); DEPOIS DO continue e antes do último x++
+          continue; //
         }
         console.log(x);
         x++;
       }
       console.log("fim do loop while com continue");
+
+      /* =================================================================== 
+        tomar muito cuidado com loops infinitos, VAI TRAVAR A MÁQUINA, então 
+        esse código aqui gerou um loop infinito, pois se meu x valer 4 ele 
+        irá somar mais um quando chegar ao x++ e vai verificar que x === 5, 
+        e ficará nisso eternamente...PARA RESOLVER O PROBLEMA É BEM SIMPLES, 
+        TENHO QUE COLOCAR O X++ ANTES E DEPOIS DO continue SÓ ASSIM FUNCIONARÁ 
+        CORRETAMENTE, OUTRA COISA É QUE PRECISO TAMBÉM COLOCAR O console.log(x); 
+        DEPOIS DO continue e antes do último x++ 
+        =================================================================== */
     </script>
   </body>
 </html>
