@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dia - semana</title>
+  </head>
+
+  <body>
+    <h1>Dia - semana</h1>
+
+    <script>
+      /* ====================================================================
+        new Date().getDay()
+          0 - domingo
+          1 - segunda-feira
+          2 - terça-feira
+          3 - quarta-feira
+          4 - quita-feira
+          5 - sexta-feira
+          6 - sábdo
+      ==================================================================== */
+
+      /* ====================================================================
+        uma boa prática é trocar array por const, que significa constante...
+        uma variável que não poderá sofrer alterações..no exemplo abaixo, ficará
+        bem claro isso.. estou colocando uma const diaSemana = [], e lá dentro 
+        eu declaro os meus valores.. lembrando que se eu tentar mudar o valor 
+        atribuido a essa array, isso dará erro
+        ==================================================================== */
+
+      /* ==================================================================== 
+        1° EXEMPLO:
+
+        const diasSemana = [
+        "domingo",
+        "segunda-feira",
+        "terça-feira",
+        "quarta-feira",
+        "quinta-feira",
+        "sexta-feira",
+        "sábado",
+        ];
+
+        let dia = new Date();
+        dia.getDay();
+        alert(dia.getDay()); 
+        ==================================================================== */
+
+      /* ====================================================================
+        2° EXEMPLO: 
+
+        nesse exemplo coloquei todas as minhas variáveis como constantes, para 
+        não sofrer alterações e não dar erro... se eu tentar mudar o valor delas, 
+        isso ocorrerá 
+        ==================================================================== */
+
+      const diasSemana = [
+        "domingo",
+        "segunda-feira",
+        "terça-feira",
+        "quarta-feira",
+        "quinta-feira",
+        "sexta-feira",
+        "sábado",
+      ];
+
+      const hoje = new Date();
+      const diaSemanaHoje = hoje.getDay();
+      // alert(diaSemanaHoje);
+      alert("Olá, hoje é " + diasSemana[diaSemanaHoje]);
+    </script>
+  </body>
+</html>
