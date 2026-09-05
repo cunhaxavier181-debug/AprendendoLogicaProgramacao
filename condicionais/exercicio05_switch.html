@@ -10,31 +10,32 @@
     <h1>Switch</h1>
 
     <script>
-      // pedir para o usuário digitar um número de 0 à 6
+      /* =================================================================== 
+        pedir para o usuário digitar um número de 0 à 6 
+        Se o número for 0, mostrar "Domingo" 
+        Se o número for 1, mostrar "Segunda-feira"
+        Se o número for 2, mostrar "Terça-feira" 
+        Se o número for 3, mostrar "Quarta-feira" 
+        Se o número for 4, mostrar "Quinta-feira" 
+        Se o número for 5, mostrar "Sexta-feira" 
+        Se o número for 6, mostrar "Sábado" 
 
-      // Se o número for 0, mostrar "Domingo"
+        Se for diferente de 0,1,2,3,4,5 ou 6, mostrar a mensagem "dígite um 
+        número entre 0 e 6" 
 
-      // Se o número for 1, mostrar "Segunda-feira"
+        aqui como eu estou verificando igualdade, basta eu comparar a string, 
+        por isso não precisei converter para número, não precisei usar parseFloat
 
-      // Se o número for 2, mostrar "Terça-feira"
+        Essa estrutura de switch é muito interessante, pois vou verificando caso 
+        a caso, e para não mostrar o próximo caso é só eu usar a palavra break
 
-      // Se o número for 3, mostrar "Quarta-feira"
+        E para eu mostrar uma mensagem caso a pessoa não dígite entre 0 e 6 
+        (nesse caso específico) é só eu colocar default: alert("dígite um número 
+        entre 0 e 6");, isso funcionará perfeitamente
 
-      // Se o número for 4, mostrar "Quinta-feira"
-
-      // Se o número for 5, mostrar "Sexta-feira"
-
-      // Se o número for 6, mostrar "Sábado"
-
-      // Se for diferente de 0,1,2,3,4,5 ou 6, mostrar a mensagem "dígite um número entre 0 e 6"
-
-      // aqui como eu estou verificando igualdade, basta eu comparar a string, por isso não precisei converter para número, não precisei usar parseFloat
-
-      // Essa estrutura de switch é muito interessante, pois vou verificando caso a caso, e para não mostrar o próximo caso é só eu usar a palavra break
-
-      // E para eu mostrar uma mensagem caso a pessoa não dígite entre 0 e 6 (nesse caso específico) é só eu colocar default: alert("dígite um número entre 0 e 6");, isso funcionará perfeitamente
-
-      // SWITCH: SEMPRE VAI COMPARAR 1.IGUALDADE; 2. VALOR E TIPO; e nunca se esqueça de colocar o BREAK;
+        SWITCH: SEMPRE VAI COMPARAR 1.IGUALDADE; 2. VALOR E TIPO; e nunca 
+        se esqueça de colocar o BREAK; 
+        =================================================================== */
 
       let n = prompt("digite um número de 0 à 6");
 
@@ -64,16 +65,6 @@
           alert("dígite um número entre 0 e 6");
           break;
       }
-
-      // if (n === "0") {
-      //   alert("Domingo");
-      // } else if (n === "1") {
-      //   alert("Segunda-feira");
-      // } else if (n === "2") {
-      //   alert("Terça-feira");
-      // } else {
-      //   alert("dígite um número entre 0 e 2");
-      // }
 
       let x = 10;
       switch (x) {
