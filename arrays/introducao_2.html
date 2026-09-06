@@ -12,20 +12,20 @@
     <script>
       let nomes = ["João", "Maria", "Daniel", "Ricardo", "Luciane"];
 
-      /* ======================================================================
-       aqui eu criei um prompt e abaixo acrescentei a minha variável 
-       nomeDigitado dentro da minha nomes.length, pois assim toda vez que eu 
-       quiser digitar um nome diferente no meu prompt, ele será somado a 
-       minha array 
-       ====================================================================== */
+      // Solicita ao usuário um novo nome através de um prompt.
       let nomeDigitado = prompt("Dígite seu nome");
 
+      // nomes.length retorna a quantidade atual de elementos do array.
+      // Como os índices começam em 0, nomes.length representa a próxima posição vazia.
+      // O nome digitado é armazenado nessa nova posição do array.
       nomes[nomes.length] = nomeDigitado;
 
+      // Percorre todos os elementos do array e exibe cada nome na página.
       for (let i = 0; i < nomes.length; i++) {
         document.write("nome: " + nomes[i] + "<br>");
       }
 
+      // Exibe a quantidade total de elementos existentes no array.
       document.write("A lista de nomes possui " + nomes.length + " elementos");
     </script>
   </body>

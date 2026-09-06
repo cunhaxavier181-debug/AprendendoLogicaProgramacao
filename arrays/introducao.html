@@ -10,27 +10,22 @@
     <h1>Arrays</h1>
 
     <script>
-      /* ======================================================================
-      Arrays é como se fosse um gaveteiro onde tenho várias caixas (variáveis) 
-      porém é só uma única váriavel (arrays)..normalmente usamos nomes de 
-      váriaveis no plural para deixar claro que é um arrays. 
+      // Um array permite armazenar vários valores dentro de uma única variável.
+      // Os elementos são organizados em posições chamadas de índices.
+      // O primeiro índice sempre será 0.
+      // Exemplo: em um array com 6 elementos, os índices serão de 0 até 5.
 
-      REGRA: meu número (indíce) sempre começará em zero 
-      e meu último sera sempre o número menos 1... 
-      Exemplo: 0,1,2,3,4,5...nesse exemplo meu número 5 será o indíce 4... 
-      ficará mais claro no código. 
+      let nomes = ["João", "Maria", "Daniel", "Beatriz", "Ricardo", "Luciane"];
 
-      para não ficar confuso: pelo fato de eu colocar dentro de colchetes a minha 
-      variável i e usando o loop for, cada vez que o código roda, aparece o 
-      nome seguinte, no caso aqui os quatro nomes troquei o número quatro que 
-      estava antes por nomes.length, o que isso faz é: eu posso acrescentar 1000 
-      nomes e o meu código funionará normalmente 
-      ====================================================================== */
+      // Sintaxe literal: os colchetes [] são utilizados para criar o array.
 
-      let nomes = ["João", "Maria", "Daniel", "Beatriz", "Ricardo", "Luciane"]; // sintaxe literal...sempre que tiver colchetes após o sinal de igual, sempre será arrays
+      // let nomes = new Array("João", "Maria", "Daniel", "Beatriz");
+      // Sintaxe utilizando a função construtora Array().
 
-      //let nomes = new Array("João", "Maria", "Daniel", "Beatriz"); //sintaxe função construtora
-
+      // O for percorre o array começando pelo índice 0.
+      // nomes.length informa a quantidade de elementos existentes no array.
+      // Como os índices começam em 0, usamos "< nomes.length" para percorrer
+      // todos os elementos sem ultrapassar o último índice.
       for (let i = 0; i < nomes.length; i++)
         document.write("nome: " + nomes[i] + " <br>");
     </script>
