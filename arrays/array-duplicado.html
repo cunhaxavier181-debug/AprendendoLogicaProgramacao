@@ -10,26 +10,22 @@
     <h1>Arrays</h1>
 
     <script>
-      /* ==================================================================== 
-      arrays duplicados
-
-      O que eu entendi: declaro uma array numeros, e coloco os números que eu quiser, 
-      depois declaro inicialmente uma array numeros2 com indice vazio.. faço o loop 
-      for e dentro dele declaro uma variável numero e essa variável receberá a minha 
-      primeira array vezes 2 e no final eu uso o método push para "empurrar" um novo 
-      valor no final do meu array numeros2
-      ==================================================================== */
-
+      // Array original contendo os números que serão utilizados no cálculo.
       let numeros = [4, 8, 1, 0, 4, 23, 98, 9, 100, 7];
 
+      // Cria um novo array vazio para armazenar os resultados.
       let numeros2 = [];
 
+      // Percorre todos os elementos do array "numeros".
       for (let i = 0; i < numeros.length; i++) {
+        // Acessa o elemento atual do array e multiplica seu valor por 2.
         let numero = numeros[i] * 2;
 
-        // numeros2[numeros2.length] = numero;
-        numeros2.push(numero); // método push() "empurra" um novo valor no final do array
+        // Adiciona o resultado ao final do array "numeros2".
+        numeros2.push(numero);
       }
+
+      // Exibe no console o novo array com os valores multiplicados por 2.
       console.log(numeros2);
     </script>
   </body>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio</title>
+  </head>
+
+  <body>
+    <h1>Desafio</h1>
+
+    <script>
+      // Array contendo valores de diferentes tipos
+      const numeros = [
+        true,
+        5,
+        6,
+        undefined,
+        78,
+        null,
+        Boolean,
+        78,
+        982,
+        365,
+        [],
+        false,
+      ];
+
+      // Variável que armazenará a soma dos números
+      let soma = 0;
+
+      // Percorre todos os elementos do array
+      for (let i = 0; i < numeros.length; i++) {
+        // Armazena o elemento atual do array na variável n
+        let n = numeros[i];
+
+        // Verifica se o valor armazenado em n é realmente do tipo number
+        if (typeof n === "number") {
+          // Soma somente os valores que são números
+          soma += n;
+        }
+      }
+
+      // Exibe o resultado da soma
+      alert("A soma dos números é " + soma);
+    </script>
+  </body>
+</html>

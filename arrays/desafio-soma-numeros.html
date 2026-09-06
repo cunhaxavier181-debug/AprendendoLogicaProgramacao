@@ -10,26 +10,35 @@
     <h1>Desafio</h1>
 
     <script>
-      /* ====================================================================
-        DESAFIO:
-        Dado um array de números, mostre num alert a soma de todos eles
-        ==================================================================== */
       /* ==================================================================== 
-        primeira interação:
-        i = 0   ; soma = 0  ; n = 2 ;
-        segunda interação:
-        i = 1   ; soma = 2  ; n = 6
-        e assim por diante... 
+        DESAFIO: 
+        Dado um array de números, mostre num alert a soma de todos eles 
         ==================================================================== */
 
+      /* ====================================================================  
+        primeira interação: 
+        i = 0   ; soma = 0  ; n = 2 ; 
+        segunda interação: 
+        i = 1   ; soma = 2  ; n = 6 
+        e assim por diante...  
+        ==================================================================== */
+
+      // Array contendo os números que serão somados
       const numeros = [2, 5, 6, 3, 85, 98, 165];
 
+      // Variável que começa com zero e armazenará a soma
       let soma = 0;
 
+      // Percorre todos os elementos do array
       for (let i = 0; i < numeros.length; i++) {
+        // Pega o número que está na posição atual do array
         let n = numeros[i];
+
+        // Adiciona o valor de n à variável soma
         soma += n;
       }
+
+      // Exibe o resultado final da soma
       alert("A soma dos números é " + soma);
     </script>
   </body>

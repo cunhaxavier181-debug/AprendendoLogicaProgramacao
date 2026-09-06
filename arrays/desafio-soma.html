@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio</title>
+  </head>
+
+  <body>
+    <h1>Desafio soma</h1>
+
+    <script>
+      // Array contendo valores de diferentes tipos
+      const numeros = [
+        10,
+        10,
+        10,
+        10,
+        100,
+        NaN,
+        true,
+        "String",
+        "100",
+        undefined,
+        false,
+        null,
+      ];
+
+      // Variável que armazenará a soma dos números
+      let soma = 0;
+
+      // Percorre o array do primeiro até o último elemento
+      for (let i = 0; i < numeros.length; i++) {
+        // Verifica duas condições:
+        // 1. !isNaN(numeros[i]) verifica se o valor não é NaN
+        // 2. typeof numeros[i] === "number" verifica se o valor é realmente um número
+        if (!isNaN(numeros[i]) && typeof numeros[i] === "number") {
+          // Adiciona o número encontrado à variável soma
+          soma += numeros[i];
+        }
+      }
+
+      // Exibe o resultado final no alert
+      alert("A soma de todos os números do array resultou: " + soma);
+    </script>
+  </body>
+</html>
