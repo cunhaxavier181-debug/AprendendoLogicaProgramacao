@@ -10,38 +10,42 @@
     <h1>Desafio 02</h1>
 
     <script>
-      /* ===================================================================
-        se eu mudar de true para false, minha condição muda automaticamente.
-
-        if (media > 4 && n1 > 0 && n2 > 0) aqui se qualquer coisa for diferente
-        disso, ele será REPROVADO, é isso.
-
-        vou colocar um outro if para impedir que o usuário digite um numero
-        maior que 10, caso ele digite números entre 0 e 10, ele vai para o if
-        de APROVADO OU REPROVADO.
-
-        aqui tem duas formas de fazer o desafio, usando os operadores lógicos,
-        a primeira está comentada e a segunda está válida, porém posso inverter
-        e terei o mesmo resultado.
-
-        eu acrescentei mais uma condição no meu if abaixo, ficou um tanto complexo
-        if (n1 <= 10 && n2 <= 10 && n1 >= 0 && n2 >= 0), porém irei aprender a
-        diminuir toda essa linha de código mais à frente no curso.
-
-        Observação: tanto no meu primeiro if quanto no meu segundo que está comentado,
-        o código funcionou normalmente, a diferença está basicamente nos conectivos
-        lógicos && (E) e no || (OU), isso faz com que eu altere um pouco a
-        sintaxe, mas é bem pouca.
-        =================================================================== */
+      // O operador || significa "OU".
+      // Basta uma das condições ser verdadeira para que o resultado seja true.
+      //
+      // Neste primeiro if, verificamos se alguma das notas está fora do
+      // intervalo permitido de 0 a 10.
+      //
+      // Se n1 for maior que 10 OU n2 for maior que 10 OU n1 for menor que 0
+      // OU n2 for menor que 0, o usuário receberá uma mensagem de erro.
+      //
+      // Caso todas essas condições sejam falsas, significa que as duas notas
+      // estão dentro do intervalo permitido e o programa continua para o else.
+      //
+      // Depois, outro if verifica as condições necessárias para a aprovação.
+      // O operador && significa "E", portanto todas as condições precisam
+      // ser verdadeiras para que o resultado seja true.
+      //
+      // Existem duas formas de fazer a primeira verificação.
+      // A primeira utiliza || para procurar valores que estão FORA do intervalo.
+      // A segunda utiliza && para verificar se os dois valores estão DENTRO
+      // do intervalo.
+      //
+      // As duas formas produzem o mesmo resultado, mas a lógica das condições
+      // é escrita de maneira diferente.
 
       let n1 = parseFloat(prompt("dígite a nota 1"));
       let n2 = parseFloat(prompt("dígite a nota 2"));
 
+      // Verifica se alguma nota está fora do intervalo de 0 a 10.
       if (n1 > 10 || n2 > 10 || n1 < 0 || n2 < 0) {
         alert("Dígite apenas números entre 0 e 10");
       } else {
+        // Como as notas são válidas, calcula a média.
         let media = (n1 + n2) / 2;
 
+        // Todas as condições precisam ser verdadeiras para a aprovação:
+        // a média deve ser maior que 4 e as duas notas devem ser maiores que 0.
         if (media > 4 && n1 > 0 && n2 > 0) {
           alert("APROVADO");
         } else {
@@ -49,20 +53,36 @@
         }
       }
 
-      /*  let n1 = parseFloat(prompt("dígite a nota 1"));
-          let n2 = parseFloat(prompt("dígite a nota 2"));
+      /*
+      Segunda forma de fazer a mesma verificação.
 
-          if (n1 <= 10 && n2 <= 10 && n1 >= 0 && n2 >= 0) {
-            let media = (n1 + n2) / 2;
+      Aqui usamos && para verificar se as duas notas estão dentro
+      do intervalo permitido de 0 a 10.
 
-            if (media > 4 && n1 > 0 && n2 > 0) {
-              alert("APROVADO");
-            } else {
-              alert("REPROVADO");
-            }
-          } else {
-            alert("Dígite apenas números 0 e 10");
-          }
+      A condição só será verdadeira se:
+      - n1 for menor ou igual a 10;
+      - n2 for menor ou igual a 10;
+      - n1 for maior ou igual a 0;
+      - n2 for maior ou igual a 0.
+
+      Portanto, as duas formas chegam ao mesmo resultado:
+      a primeira procura valores inválidos usando ||,
+      enquanto a segunda procura valores válidos usando &&.
+
+      let n1 = parseFloat(prompt("dígite a nota 1"));
+      let n2 = parseFloat(prompt("dígite a nota 2"));
+
+      if (n1 <= 10 && n2 <= 10 && n1 >= 0 && n2 >= 0) {
+        let media = (n1 + n2) / 2;
+
+        if (media > 4 && n1 > 0 && n2 > 0) {
+          alert("APROVADO");
+        } else {
+          alert("REPROVADO");
+        }
+      } else {
+        alert("Dígite apenas números 0 e 10");
+      }
       */
     </script>
   </body>

@@ -10,20 +10,21 @@
     <h1>Exercício 01</h1>
 
     <script>
-      /* =================================================================== 
-        Pedir para o usuário digitar dois números
-        calcular a média 
-        mostrar a mensagem "APROVADO!" caso a média seja maior que 4 
-        if é usado na maioria das linguagens de programação para apresentar 
-        alguma mensagem, como eu estou pedindo, tudo que estiver dentro das 
-        chaves será mostrado pelo alert 
-        =================================================================== */
-
+      // Solicita ao usuário duas notas através do prompt.
+      // O parseFloat() converte o valor digitado, que inicialmente é uma string,
+      // para um número decimal.
       let n1 = parseFloat(prompt("dígite a nota 1"));
       let n2 = parseFloat(prompt("dígite a nota 2"));
 
+      // Calcula a média somando as duas notas e dividindo o resultado por 2.
       let media = (n1 + n2) / 2;
 
+      // O if verifica se uma determinada condição é verdadeira.
+      // Se a média for maior que 4, a condição será true e o código
+      // dentro das chaves será executado.
+      //
+      // Se a média for menor ou igual a 4, a condição será false
+      // e o código dentro do if não será executado.
       if (media > 4) {
         alert("APROVADO!");
       }

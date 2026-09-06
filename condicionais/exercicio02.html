@@ -10,28 +10,28 @@
     <h1>Exercício 02</h1>
 
     <script>
-      /* =================================================================== 
-        Pedir para o usuário digitar dois números 
-        calcular a média 
-        mostrar a mensagem "APROVADO!" caso a média seja maior que 4 ou 
-        "REPROVADO" caso seja menou ou igual à 4 
-        if e else são usados na maioria das linguagens de programação para 
-        apresentar alguma mensagem, como eu estou pedindo, tudo que estiver 
-        dentro das chaves será mostrado pelo alert, e no final coloquei outro 
-        alert só para mostrar fim do programa
-        =================================================================== */
-
+      // Solicita ao usuário duas notas através do prompt.
+      // O parseFloat() converte o valor digitado, que inicialmente é uma string,
+      // para um número decimal.
       let n1 = parseFloat(prompt("dígite a nota 1"));
       let n2 = parseFloat(prompt("dígite a nota 2"));
 
+      // Calcula a média das duas notas.
       let media = (n1 + n2) / 2;
 
+      // O if verifica se a média é maior que 4.
+      // Se a condição for verdadeira (true), o bloco do if será executado.
       if (media > 4) {
         alert("APROVADO!");
+
+        // O else será executado quando a condição do if for falsa (false).
+        // Portanto, se a média for menor ou igual a 4, o aluno será reprovado.
       } else {
         alert("REPROVADO!");
       }
 
+      // Como este alert está fora do if e do else,
+      // ele será executado independentemente do resultado da média.
       alert("FIM DO PROGRAMA!");
     </script>
   </body>

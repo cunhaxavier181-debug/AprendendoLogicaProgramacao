@@ -10,29 +10,38 @@
     <h1>Desafio 02</h1>
 
     <script>
-      /* ====================================================================== 
-        se eu mudar de true para false, minha condição muda automaticamente 
-
-        if (media > 4 && n1 > 0 && n2 > 0) aqui se qualquer coisa for diferente 
-        disso, ele será REPROVADO, é isso 
-
-        vou colocar um outro if para impedir que o usuário digite um numero maior 
-        que 10, caso ele digite números entre 0 e 10, ele vai para o if de 
-        APROVADO OU REPROVADO 
-
-        aqui tem duas formas de fazer o desafio, usando os operadores lógicos, 
-        a primeira está comentada e a segunda está válida, porém posso inverter 
-        e terei o mesmo resultado 
-        ====================================================================== */
+      // O operador && significa "E": todas as condições precisam ser verdadeiras.
+      // Se qualquer uma das condições for falsa, o resultado será false.
+      //
+      // Neste desafio, primeiro verificamos se as notas estão dentro do limite
+      // permitido. O usuário só pode informar notas menores ou iguais a 10.
+      //
+      // Existem duas formas de fazer essa verificação:
+      //
+      // 1ª forma:
+      // Verificar se alguma nota é MAIOR que 10 usando o operador || ("OU").
+      // Nesse caso, se n1 OU n2 for maior que 10, exibimos uma mensagem de erro.
+      //
+      // 2ª forma:
+      // Verificar se as duas notas são MENORES ou IGUAIS a 10 usando && ("E").
+      // Se as duas condições forem verdadeiras, podemos continuar para verificar
+      // a aprovação ou reprovação.
+      //
+      // As duas formas chegam ao mesmo resultado, apenas utilizam condições
+      // diferentes para fazer a mesma verificação.
 
       let n1 = parseFloat(prompt("dígite a nota 1"));
       let n2 = parseFloat(prompt("dígite a nota 2"));
 
+      // 1ª forma de verificar as notas:
+      // Se uma das notas for maior que 10, exibe uma mensagem de erro.
+      // Caso contrário, calcula a média e verifica a aprovação.
+      //
       // if (n1 > 10 || n2 > 10) {
       //   alert("Dígite apenas números menores ou iguais à 10");
       // } else {
       //   let media = (n1 + n2) / 2;
-
+      //
       //   if (media > 4 && n1 > 0 && n2 > 0) {
       //     alert("APROVADO");
       //   } else {
@@ -40,15 +49,22 @@
       //   }
       // }
 
+      // 2ª forma de verificar as notas:
+      // As duas notas precisam ser menores ou iguais a 10 para continuar.
       if (n1 <= 10 && n2 <= 10) {
+        // Calcula a média das duas notas.
         let media = (n1 + n2) / 2;
 
+        // Para ser aprovado, todas as condições precisam ser verdadeiras:
+        // a média deve ser maior que 4 e as duas notas devem ser maiores que 0.
         if (media > 4 && n1 > 0 && n2 > 0) {
           alert("APROVADO");
         } else {
+          // Se qualquer uma das condições acima for falsa, será reprovado.
           alert("REPROVADO");
         }
       } else {
+        // Se alguma nota for maior que 10, o usuário recebe uma mensagem de erro.
         alert("Dígite apenas números menores ou iguais à 10");
       }
     </script>

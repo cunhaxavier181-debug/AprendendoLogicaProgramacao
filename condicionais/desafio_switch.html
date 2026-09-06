@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,38 +10,43 @@
     <h1>Desafio Switch</h1>
 
     <script>
-      /* ====================================================================== 
-        eu preciso estudar bastante, pois não consigo resolver um problema 
-        simples como esse, prestar mais atenção, pois assim fica dificil evoluir 
-        
-        Se eu deixar a minha let myvar = null; e não colocar null entre aspas, 
-        o meu alert não funcionará corretamente, pois irá ficar aparecendo null 
-        o tempo inteiro, erro de implementação antiga, porém as atualizações não 
-        podem modificar isso, pois em sistemas antigos o null é reconhecido como 
-        objeto e funciona normalmente, então para o meu desafio coloquei ele entre 
-        aspas, ai sim o meu switch funcionou.....LEMBRAR SEMPRE DA 
-        RETROCOMPATIBILIDADE DO JAVASCRIPT, ELE TEM QUE FUNCIONAR MESMO PARA OS 
-        SISTEMAS ARCAICOS 
-
-        Se eu mudar a minha variável para número ou qualquer outra variável aceita 
-        pelo javascript, a minha switch será reconhecida naturalmente
-        ====================================================================== */
+      // typeof verifica o tipo de dado armazenado na variável.
+      // Ele retorna uma string, como "number", "string", "boolean" ou "undefined".
+      //
+      // Atenção ao uso de null:
+      // null é um valor especial do JavaScript que representa ausência de valor.
+      // Porém, existe uma particularidade histórica: typeof null retorna "object".
+      // Isso é um comportamento antigo do JavaScript e foi mantido por
+      // compatibilidade com códigos existentes.
+      //
+      // Por esse motivo, se myvar receber null sem aspas:
+      // let myvar = null;
+      //
+      // typeof myvar retornará "object", e nenhum dos cases abaixo será executado.
+      // Neste exemplo, usamos "null" entre aspas para que o valor seja uma string.
+      // Assim, typeof myvar retornará "string" e o segundo case será executado.
 
       let myvar = "null";
 
+      // O switch compara o resultado de typeof myvar com cada case.
       switch (typeof myvar) {
         case "number":
           alert("myVar é número");
           break;
+
         case "string":
           alert("myVar é texto");
           break;
+
         case "boolean":
           alert("myVar é boleana");
           break;
+
         case "undefined":
           alert("myVar é undefined");
           break;
+
+        // Caso nenhum dos cases corresponda ao tipo encontrado.
         default:
           alert("nenhum tipo conhecido");
       }

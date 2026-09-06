@@ -10,18 +10,25 @@
     <h1>Desafio</h1>
 
     <script>
-      /* ====================================================================== 
-        se eu mudar de true para false, minha condição muda automaticamente 
-        
-        if (media > 4 && n1 > 0 && n2 > 0) aqui se qualquer coisa for diferente 
-        disso, ele será REPROVADO, é isso 
-        ====================================================================== */
-
+      // Solicita duas notas ao usuário e converte os valores digitados
+      // de texto (string) para números decimais (number).
       let n1 = parseFloat(prompt("dígite a nota 1"));
       let n2 = parseFloat(prompt("dígite a nota 2"));
 
+      // Calcula a média somando as duas notas e dividindo o resultado por 2.
       let media = (n1 + n2) / 2;
 
+      // O operador && significa "E".
+      // Portanto, todas as condições precisam ser verdadeiras para que
+      // o código entre no bloco do if.
+      //
+      // A aprovação acontece somente quando:
+      // 1. A média é maior que 4.
+      // 2. A primeira nota é maior que 0.
+      // 3. A segunda nota é maior que 0.
+      //
+      // Se qualquer uma dessas condições for falsa, o código executará
+      // o bloco else e exibirá "REPROVADO".
       if (media > 4 && n1 > 0 && n2 > 0) {
         alert("APROVADO");
       } else {

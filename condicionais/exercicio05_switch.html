@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,32 +10,15 @@
     <h1>Switch</h1>
 
     <script>
-      /* =================================================================== 
-        pedir para o usuário digitar um número de 0 à 6 
-        Se o número for 0, mostrar "Domingo" 
-        Se o número for 1, mostrar "Segunda-feira"
-        Se o número for 2, mostrar "Terça-feira" 
-        Se o número for 3, mostrar "Quarta-feira" 
-        Se o número for 4, mostrar "Quinta-feira" 
-        Se o número for 5, mostrar "Sexta-feira" 
-        Se o número for 6, mostrar "Sábado" 
+      /*
+        switch compara o valor e o tipo usando igualdade estrita (===).
 
-        Se for diferente de 0,1,2,3,4,5 ou 6, mostrar a mensagem "dígite um 
-        número entre 0 e 6" 
+        prompt() sempre retorna uma string, por isso os cases também usam strings.
+        Assim, não é necessário converter o valor com parseFloat().
 
-        aqui como eu estou verificando igualdade, basta eu comparar a string, 
-        por isso não precisei converter para número, não precisei usar parseFloat
-
-        Essa estrutura de switch é muito interessante, pois vou verificando caso 
-        a caso, e para não mostrar o próximo caso é só eu usar a palavra break
-
-        E para eu mostrar uma mensagem caso a pessoa não dígite entre 0 e 6 
-        (nesse caso específico) é só eu colocar default: alert("dígite um número 
-        entre 0 e 6");, isso funcionará perfeitamente
-
-        SWITCH: SEMPRE VAI COMPARAR 1.IGUALDADE; 2. VALOR E TIPO; e nunca 
-        se esqueça de colocar o BREAK; 
-        =================================================================== */
+        break encerra o switch após encontrar o case correspondente.
+        default é executado quando nenhum case é encontrado.
+      */
 
       let n = prompt("digite um número de 0 à 6");
 
@@ -67,13 +50,14 @@
       }
 
       let x = 10;
+
       switch (x) {
         case "10":
           alert("x é string");
           break;
         case 10:
           alert("x é número");
-          break; // esse break não é necessário, pois esse é o último case
+          break; // opcional no último case
       }
     </script>
   </body>
