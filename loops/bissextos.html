@@ -18,14 +18,22 @@
     </p>
 
     <script>
-      // lembrar que o sinal de % significa múltiplo de alguma coisa ou sobra, nesse caso é múltiplo
-
+      // Cria um laço que começa no ano 1004 e vai até o ano 2024.
+      // A cada repetição, o valor de ano aumenta 4.
       for (let ano = 1004; ano <= 2024; ano += 4) {
+        // Verifica se o ano não é múltiplo de 100 ou se é múltiplo de 400.
+        // O operador % verifica o resto da divisão.
+        // Se o resto for 0, significa que o ano é divisível pelo número.
         let anoBissexto = ano % 100 != 0 || ano % 400 === 0;
 
+        // Verifica se anoBissexto possui o valor true.
         if (anoBissexto) {
+          // Exibe no console que o ano é bissexto.
           console.log(ano, "é ano bissexto");
+
+          // Executado quando anoBissexto possui o valor false.
         } else {
+          // Exibe no console que o ano não é bissexto.
           console.log(ano, "não é ano bissexto");
         }
       }

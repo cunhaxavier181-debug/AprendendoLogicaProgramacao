@@ -10,25 +10,24 @@
     <h1>loops - tabuada</h1>
 
     <script>
-      /* =================================================================== 
-        o comando document.write() não é mais utilizado para criar páginas, 
-        aplicações web na vida real, porém nesse exercício será usado 
-        
-        um Loop sempre precisa ter uma condição de saída, se não ficará no 
-        loop infinito 
-
-        a tradução de while é (enquanto)... para deixar claro, enquanto (while) 
-        o meu contador for menor ou igual à 1000 continue executando a minha 
-        tabuada, chegando no 1000, apareça a mensagem saiu do loop 
-        =================================================================== */
-
+      // Define o número que será utilizado para fazer a tabuada.
       let n = 5;
 
+      // Cria o contador e inicia seu valor em 0.
       let contador = 0;
+
+      // Executa o loop enquanto o contador for menor ou igual a 10.
       while (contador <= 10) {
+        // Exibe a multiplicação do número pelo valor atual do contador.
         document.write(n + " x " + contador + ": " + n * contador + "<br>");
-        contador++; // sem essa linha, a linha while (contador <= 1000) fica true infinitamente (loop), e o navegador trava (aliás a aba que está sendo executada)
+
+        // Aumenta o contador em 1 a cada repetição.
+        // Sem essa linha, a condição do while continuaria sendo verdadeira
+        // e o loop ficaria infinito, podendo travar a aba do navegador.
+        contador++;
       }
+
+      // Exibe uma mensagem quando o loop terminar.
       document.write("saiu do loop");
     </script>
   </body>

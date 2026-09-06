@@ -10,20 +10,15 @@
     <h1>Exercício 1</h1>
 
     <script>
-      /* =================================================================== 
-        lembrar que: um sinal de igual nunca é comparação mas sim atribuição, 
-        precisa de dois sinais de igual == para que seja comparação 
-        
-        O Operador => não é operador de comparação, mas sim uma notação para 
-        arrow function em javascript, o certo é sempre o sinal de igual depois >=
-
-        em algumas linguagens o operador de diferença é <>, já aqui é !=, 
-        lembrar disso 
-        =================================================================== */
-
+      // Pede para o usuário digitar um número e converte o valor para número decimal.
       let n1 = parseFloat(prompt("Dígite um número de 0 à 10"));
+
+      // Pede para o usuário digitar outro número e converte o valor para número decimal.
       let n2 = parseFloat(prompt("Dígite outro número de 0 à 10"));
 
+      // Verifica se o segundo número é maior ou igual ao primeiro.
+      // O operador >= significa "maior ou igual".
+      // O resultado da comparação será true ou false.
       alert("O segundo número é maior ou igual ao primeiro? " + (n2 >= n1));
     </script>
   </body>

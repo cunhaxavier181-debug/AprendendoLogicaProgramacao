@@ -10,46 +10,35 @@
     <h1>Desafio 2</h1>
 
     <script>
-      /* =================================================================== 
-        ATENÇÃO: PARA ESSE EXERCÍCIO, VOCÊ PODE CRIAR APENAS UMA ÚNICA VARÁVEL 
-
-        crie uma váriavel e atribua o valor 10 
-        multiplique o valor da váriavel por 5 e reatribua o valor 
-        some 1 à variavel e reatribua o novo valor 
-        sem alterar o valor da variável, mostre na tela o resto da divisão por 6
-
-        a mensagem deve ser: O resto da divisão de (variável) por 6 é (resultado) 
-        sem alterar o valor da variável, mostre na tela o resto da divisão 
-        por 6 elevado ao quadrado
-
-        a mensagem deve ser: O quadrado do resto da divisão de (variável) 
-        por 6 é (resultado)
-
-        mostre na tela o valor da variável
-
-        agora divida o valor da variável por 4 e reatribua o valor
-
-        Qual o valor da variável? 
-        =================================================================== */
-
+      // Cria a variável n e atribui o valor 10.
       let n = 10;
 
-      n += 5; // é a mesma coisa que n = n + 5; que dará 15, pois o n agora vale 15
+      // Multiplica o valor de n por 5 e reatribui o resultado à própria variável.
+      // É a mesma coisa que: n = n * 5;
+      n *= 5;
 
-      n *= 5; // é a mesma coisa que n = n * 5; que dará 75
+      // Soma 1 ao valor de n e reatribui o novo valor.
+      // É a mesma coisa que: n = n + 1;
+      n++;
 
-      n++; // E esse sinal de ++ quer dizer que sempre estou somando mais 1; no caso aqui seria 76
-
+      // Calcula o resto da divisão de n por 6 usando o operador %.
+      // Exibe o resultado junto com o texto na tela.
       alert("O resto da divisão de " + n + " por 6 é " + (n % 6));
 
+      // Calcula o resto da divisão de n por 6 e eleva o resultado ao quadrado.
+      // O operador ** é usado para realizar uma potenciação.
       alert(
         "O quadrado do resto da divisão de " + n + " por 6 é " + (n % 6) ** 2,
       );
 
+      // Exibe o valor atual de n na tela.
       alert(n);
 
+      // Divide o valor de n por 4 e reatribui o resultado à própria variável.
+      // É a mesma coisa que: n = n / 4;
       n /= 4;
 
+      // Exibe o novo valor de n na tela.
       alert(n);
     </script>
   </body>

@@ -10,13 +10,23 @@
     <h1>Desafio Tabuada</h1>
 
     <script>
+      // Cria a variável n e atribui o valor 1.
       let n = 1;
 
+      // Cria a variável contador e atribui o valor inicial 0.
       let contador = 0;
+
+      // Executa o loop enquanto contador for menor ou igual a 10000.
       while (contador <= 10000) {
+        // Exibe a multiplicação de n por contador na página.
+        // O <br> faz uma quebra de linha após cada resultado.
         document.write(n + " x " + contador + " : " + n * contador + "<br>");
+
+        // Aumenta o valor de contador em 1 a cada repetição.
         contador++;
       }
+
+      // Exibe uma mensagem informando que o cálculo terminou.
       document.write("fim do calculo");
     </script>
   </body>

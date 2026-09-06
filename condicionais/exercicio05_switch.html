@@ -10,54 +10,87 @@
     <h1>Switch</h1>
 
     <script>
-      /*
-        switch compara o valor e o tipo usando igualdade estrita (===).
-
-        prompt() sempre retorna uma string, por isso os cases também usam strings.
-        Assim, não é necessário converter o valor com parseFloat().
-
-        break encerra o switch após encontrar o case correspondente.
-        default é executado quando nenhum case é encontrado.
-      */
-
+      // Cria a variável n e recebe o valor digitado pelo usuário.
+      // O prompt sempre retorna o valor como string.
       let n = prompt("digite um número de 0 à 6");
 
+      // Verifica o valor de n e procura um case correspondente.
       switch (n) {
+        // Se n for exatamente a string "0".
         case "0":
+          // Exibe "Domingo" na tela.
           alert("Domingo");
+          // Encerra o switch.
           break;
+
+        // Se n for exatamente a string "1".
         case "1":
+          // Exibe "Segunda-feira" na tela.
           alert("Segunda-feira");
+          // Encerra o switch.
           break;
+
+        // Se n for exatamente a string "2".
         case "2":
+          // Exibe "Terça-feira" na tela.
           alert("Terça-feira");
+          // Encerra o switch.
           break;
+
+        // Se n for exatamente a string "3".
         case "3":
+          // Exibe "Quarta-feira" na tela.
           alert("Quarta-feira");
+          // Encerra o switch.
           break;
+
+        // Se n for exatamente a string "4".
         case "4":
+          // Exibe "Quinta-feira" na tela.
           alert("Quinta-feira");
+          // Encerra o switch.
           break;
+
+        // Se n for exatamente a string "5".
         case "5":
+          // Exibe "Sexta-feira" na tela.
           alert("Sexta-feira");
+          // Encerra o switch.
           break;
+
+        // Se n for exatamente a string "6".
         case "6":
+          // Exibe "Sábado" na tela.
           alert("Sábado");
+          // Encerra o switch.
           break;
+
+        // Executado quando nenhum dos cases anteriores for encontrado.
         default:
+          // Informa que o usuário deve digitar um número entre 0 e 6.
           alert("dígite um número entre 0 e 6");
+          // Encerra o switch.
           break;
       }
 
+      // Cria a variável x e atribui o número 10.
       let x = 10;
 
+      // Verifica o valor e também o tipo de x.
       switch (x) {
+        // Não será executado, pois "10" é uma string.
         case "10":
+          // Essa mensagem só apareceria se x fosse a string "10".
           alert("x é string");
+          // Encerra o switch.
           break;
+
+        // Será executado, pois 10 é um número.
         case 10:
+          // Exibe que x é um número.
           alert("x é número");
-          break; // opcional no último case
+          // O break é opcional porque este é o último case.
+          break;
       }
     </script>
   </body>

@@ -10,19 +10,17 @@
     <h1>Exercício 2</h1>
 
     <script>
-      /* =================================================================== 
-        calculando a media e pedindo para mostrar no alert, eu tive que ver 
-        o professor fazer, porém se eu prestar atenção é bem fácil, preciso 
-        praticar mais.. um detalhe, se eu colocar o sinal de igual após o 
-        sinal de maior, e colocar tanto no n1 quanto no n2 o número 7, 
-        o Boolean dará true 
-        =================================================================== */
-
+      // Pede para o usuário digitar um número e converte o valor para número decimal.
       let n1 = parseFloat(prompt("Dígite um número de 0 à 10"));
+
+      // Pede para o usuário digitar outro número e converte o valor para número decimal.
       let n2 = parseFloat(prompt("Dígite outro número de 0 à 10"));
 
+      // Soma os dois números e divide o resultado por 2 para calcular a média.
       let media = (n1 + n2) / 2;
 
+      // Verifica se a média é maior que 7.
+      // O resultado da comparação será true ou false.
       alert("A média é maior que 7? " + (media > 7));
     </script>
   </body>

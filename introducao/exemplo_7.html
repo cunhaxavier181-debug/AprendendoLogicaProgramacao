@@ -9,21 +9,21 @@
     <h1>Exemplo 7</h1>
 
     <script>
-      /* =================================================================== 
-        criei uma variavel str(abreviação muito comum para a palavra string) 
-        com um valor Ba, tentei transformar essa string em um número inteiro, 
-        porém não deu certo, então aparece a mensagem BaNaN "Ba" + "NaN 
-        (Not a Number)" no alert, depois eu acrescentei o "a" e ficou a junção 
-        "BaNaN" + "a" e pedi para que essa mensagem ficasse em minusculo 
-        colocando a função .toLowerCase, é isso que quer dizer abaixo 
-        =================================================================== */
-
+      // Cria a variável str e armazena o texto "Ba".
       let str = "Ba";
 
-      str += parseInt(str); // aqui eu somei a variavel "Ba" + "NaN" ficando = BaNaN
-      str += "a"; // aqui eu somei a variavel "BaNaN" + "a" ficando BaNaNa
+      // Tenta converter o conteúdo de str para um número inteiro.
+      // Como "Ba" não é um número, o resultado da conversão será NaN.
+      // Depois, o valor de str é concatenado com NaN, formando "BaNaN".
+      str += parseInt(str);
 
-      alert(str.toLowerCase()); // pedi para colocar tudo em minusculo
+      // Concatena a letra "a" ao final do conteúdo atual de str.
+      // O resultado passa a ser "BaNaNa".
+      str += "a";
+
+      // Converte todo o conteúdo de str para letras minúsculas.
+      // O resultado exibido será "banana".
+      alert(str.toLowerCase());
     </script>
   </body>
 </html>

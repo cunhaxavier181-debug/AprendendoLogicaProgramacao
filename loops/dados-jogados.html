@@ -9,46 +9,48 @@
     <h1>Dados - jogados</h1>
 
     <script>
+      // Cria a variável para contar quantas vezes os dados foram jogados.
       let quantasVezesDadosJogados = 0;
+
+      // Cria a variável para contar quantas vezes a soma dos dados foi par.
       let quantasVezesASomaEhPar = 0;
 
+      // Cria um loop que continuará executando enquanto a condição for verdadeira.
       while (true) {
+        // Gera um número aleatório entre 1 e 6 para o primeiro dado.
         let dados1 = parseInt(Math.random() * 6) + 1;
+
+        // Gera um número aleatório entre 1 e 6 para o segundo dado.
         let dados2 = parseInt(Math.random() * 6) + 1;
 
+        // Exibe os valores dos dados e os valores atuais dos contadores.
         console.log(
           dados1,
           dados2,
           quantasVezesDadosJogados,
           quantasVezesASomaEhPar,
         );
+
+        // Aumenta em 1 a quantidade de vezes que os dados foram jogados.
         quantasVezesDadosJogados++;
 
+        // Soma os dois dados e verifica se o resultado é par.
         if ((dados1 + dados2) % 2 === 0) {
+          // Aumenta em 1 a quantidade de vezes que a soma foi par.
           quantasVezesASomaEhPar++;
         }
 
+        // Verifica se a soma dos dados já foi par pelo menos 10 vezes.
         if (quantasVezesASomaEhPar >= 10) {
+          // Encerra completamente o loop.
           break;
         }
       }
+
+      // Exibe a quantidade total de vezes que os dados foram jogados.
       console.log(
         "Os dados foram jogados " + quantasVezesDadosJogados + " vezes",
       );
-
-      /* =================================================================== 
-        esse problema terá que ser muito bem explicado..VAMOS LÁ: 1° criei 
-        duas variáveis que me deram quantas vezes os dados foram jogados 
-        (quantasVezesDadosJogados) depois quantas vezes a soma desses dados 
-        é par (quantasVezesASomaEhPar)...depois dentro o while criei mais 
-        duas variáveis (dados1 e dados2) e fiz o Math.random e no meu 
-        console.log distribui da seguinte forma: 1° coluna é o dados1, 2° 
-        coluna dados2, 3° coluna quantasVezesDadosJogados, 4° coluna 
-        quantasVezesASomaEhPar, e essa última coluna não pode passar de 10 vezes 
-        que a soma deu par, quando chegar a 9 vezes ele encerra o loop...É ISSO 
-        QUE O CÓDIGO ACIMA DESCREVE... FAZER MAIS UMA VEZ SOZINHO PARA EU FIXAR 
-        MELHOR ESSA INFORMAÇÃO. 
-        =================================================================== */
     </script>
   </body>
 </html>

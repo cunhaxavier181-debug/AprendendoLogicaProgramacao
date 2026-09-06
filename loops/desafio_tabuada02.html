@@ -4,45 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Desafio</title>
-
-    <style>
-      /* ====================================================================
-       Pedir para o usuário digitar um número e mostrar a tabuada de 1 até 
-       1000 desse número, colocando uma linha divisória ou quebra de linha 
-       sempre que mudar de dezena 
-       ==================================================================== */
-    </style>
   </head>
 
   <body>
     <h1>Desafio Tabuada</h1>
 
     <script>
+      // Pede para o usuário digitar um número e converte o valor para número decimal.
+      let n = parseFloat(prompt("dígite um número"));
 
-      /* =================================================================== 
-        nesse if que está dentro do meu for estou colocando uma condição que 
-        é: se o resto da minha divisão da variável i por 10 for igual a 0, 
-        coloque uma linha horizontal 
-        se caso eu queira colocar a minha variável i começando com 0, eu 
-        preciso colocar no meu if o seguinte (i % 10 === 0 && i > 0) isso fará 
-        com que essa condição seja falsa, então o meu primeiro resto 0 não 
-        terá linha horizontal nenhuma, somente apartir do número 10 
-        =================================================================== */
+      // Verifica se o valor digitado é realmente um número.
+      if (!isNaN(n)) {
+        // Cria um loop que começa em 0 e vai até 1000.
+        for (let i = 0; i <= 1000; i++) {
+          // Exibe a multiplicação de n por i na página.
+          document.write(n + " x " + i + ": " + n * i + "<br>");
 
-      let n = parseFloat(prompt("dígite um número"))
-
-      if (!isNaN(n)){
-      for (let i = 0; i <= 1000; i++){
-        document.write(n + " x " + i + ": " + n * i + "<br>")
-
-        if(i % 10 === 0 && i > 0) {
-          document.write("<hr>")
+          // Verifica se i é múltiplo de 10 e se é maior que 0.
+          if (i % 10 === 0 && i > 0) {
+            // Exibe uma linha horizontal após cada dezena.
+            document.write("<hr>");
+          }
         }
+
+        // Executado quando o valor digitado não é um número.
+      } else {
+        // Exibe uma mensagem informando que devem ser digitados apenas números.
+        alert("dígite apenas números");
       }
-    } else{
-      alert("dígite apenas números")
-    }
-    </script>
     </script>
   </body>
 </html>

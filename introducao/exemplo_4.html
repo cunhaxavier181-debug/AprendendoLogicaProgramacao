@@ -10,24 +10,19 @@
     <h1>Mostrar a média</h1>
 
     <script>
-      /* =================================================================== 
-        pedir para o usuário digitar dois números 
-        calcular a média 
-        mostrar a média na tela 
-
-        aqui abaixo estou usando duas abordagens diferentes para obter o mesmo 
-        resultado, na primeira abordagem fiz igual os outros exemplos 
-        anteriores, já na segunda abordagem é uma redução da primeira, 
-        porém funciona igual 
-        =================================================================== */
-
+      // Cria a variável n1 e armazena o valor digitado pelo usuário.
       let n1 = prompt("digite um numero");
+
+      // Converte o valor de n1 de texto para número decimal.
       n1 = parseFloat(n1);
 
+      // Converte o valor digitado diretamente para número decimal e armazena em n2.
       let n2 = parseFloat(prompt("digite outro número"));
 
+      // Soma n1 e n2 e divide o resultado por 2 para calcular a média.
       let media = (n1 + n2) / 2;
 
+      // Exibe a média na tela.
       alert("a média é: " + media);
     </script>
   </body>

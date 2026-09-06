@@ -10,54 +10,97 @@
     <h1>Boolean, Number e string - typeof</h1>
 
     <script>
-      /* ===================================================================
-        É possível checar o tipo, no javascript usando o operador typeof, 
-        ele é um operador unário, não precisa dos dois lados para retornar o 
-        valor... o operador = é um operador binário, assim como o (+, -, *, /) 
-
-        a ação (comando) console.log é usado para nós desenvolvedores 
-        visualizar se o nosso código está correto antes de ser renderizado 
-        no navegador, só serve durante o desenvolvimento 
-
-        se eu quero que uma mensagem que está dentro do meu texto seja vista 
-        como string (texto também), tenho algumas formas: coloco aspas "" 
-        e dentro dela seleciono o texto e coloco aspas '' ou inverto 
-        =================================================================== */
-
+      // Cria a variável mensagem e armazena um texto dentro dela.
+      // As aspas simples permitem colocar a palavra "mensagem de texto" dentro da string.
       let mensagem = "olá eu sou uma 'mensagem de texto'";
+
+      // Exibe o conteúdo da variável mensagem no console.
       console.log(mensagem);
 
+      // Verifica o tipo do valor 0.
       console.log(typeof 0);
+
+      // Verifica o tipo do valor "0".
+      // Apesar de conter o mesmo caractere, "0" é uma string.
       console.log(typeof "0");
+
+      // Converte o número 0 para string e verifica o seu tipo.
       console.log(typeof String(0));
 
+      // Cria a variável isValid e atribui o valor booleano true.
       let isValid = true;
 
+      // Verifica o tipo armazenado na variável isValid.
       console.log(typeof isValid);
 
-      console.log(Boolean("0")); // true
-      console.log(Boolean(0)); // false
-      console.log(Boolean(undefined)); // false
-      console.log(Boolean(null)); // false
-      console.log(Boolean("")); // false
-      console.log(Boolean(NaN)); // false
+      // Converte a string "0" para boolean.
+      // Uma string com conteúdo é considerada true.
+      console.log(Boolean("0"));
 
-      let naoDeclarado = null; // aqui estou colocando a minha intenção que não quero declarar valor algum, é diferente de quando eu esqueço e ai aparece undefined em vez de null
+      // Converte o número 0 para boolean.
+      // O número 0 é considerado false.
+      console.log(Boolean(0));
+
+      // Converte undefined para boolean.
+      // undefined é considerado false.
+      console.log(Boolean(undefined));
+
+      // Converte null para boolean.
+      // null é considerado false.
+      console.log(Boolean(null));
+
+      // Converte uma string vazia para boolean.
+      // Uma string vazia é considerada false.
+      console.log(Boolean(""));
+
+      // Converte NaN para boolean.
+      // NaN é considerado false.
+      console.log(Boolean(NaN));
+
+      // Cria a variável naoDeclarado e atribui o valor null.
+      // null representa a ausência intencional de um valor.
+      let naoDeclarado = null;
+
+      // Exibe o valor armazenado na variável.
       console.log(naoDeclarado);
+
+      // Altera o valor da variável para 0.
       naoDeclarado = 0;
+
+      // Exibe o novo valor armazenado na variável.
       console.log(naoDeclarado);
 
+      // Tenta converter a string "a" para um número decimal.
+      // Como "a" não representa um número, o resultado será NaN.
       let n = parseFloat("a");
-      console.log(n); // aqui ele é NaN (not a number)
-      console.log(typeof n); // já aqui o meu "a" é visto como um número
 
+      // Exibe o valor armazenado em n.
+      console.log(n);
+
+      // Verifica o tipo de n.
+      // NaN pertence ao tipo number no JavaScript.
+      console.log(typeof n);
+
+      // Exibe uma linha separadora no console.
       console.log("--------");
+
+      // Verifica o tipo de undefined.
       console.log(typeof undefined);
-      console.log(typeof null); // isso é um erro de implementação do javascript, as atualizaçoes não podem modificar isso para manter o principio da web, os sites devem ser retrocompativeis
+
+      // Verifica o tipo de null.
+      // Apesar de representar ausência de valor, o resultado é "object".
+      console.log(typeof null);
+
+      // Verifica o tipo do número 0.
       console.log(typeof 0);
+
+      // Verifica o tipo de uma string vazia.
       console.log(typeof "");
+
+      // Verifica o tipo do valor booleano true.
       console.log(typeof true);
 
+      // Converte o número 10 para string e verifica o tipo do resultado.
       console.log(typeof (10).toString());
     </script>
   </body>

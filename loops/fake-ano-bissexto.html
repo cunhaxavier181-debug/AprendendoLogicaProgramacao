@@ -10,47 +10,42 @@
     <h1>fake -ano-bissexto</h1>
 
     <script>
-      /* =================================================================== 
-        mostre na tela todos os anos a partir de 1004 até o ano de 2024, 
-        pulando de quatro em quatro anos.
-
-        É como mostrar os anos bissextos, mas sem as regras pra descobrir se 
-        um ano é bissexto ou não. (vamos imaginar que se o ano é multiplo de 
-        quatro, ele é bissexto). 
-
-        vou deixar esse for de exemplo : LEMBRAR QUE ELE TAMBÉM SERVE PARA O 
-        QUE EU ESTOU FAZENDO, PORÉM TEM OUTRA MANEIRA, A QUAL DEMONSTRAREI MAIS 
-        ABAIXO 
-
-        nesse primeiro exemplo ele foi executado no meu console.log (1021) 
-        vezes, porque por mais que ele mostre de 4 em 4 anos na tela, ele 
-        conta de 1 em 1 no meu console.log
-
-        no segundo exemplo ele foi executado no meu console.log (256) vezes, 
-        já aqui não, ele realmente conta de 4 em 4 anos 
-        =================================================================== */
-
-      /*  1° exemplo:
-
-          let contador = 0;
-
-          for (let ano = 1004; ano <= 2024; ano++) {
-            contador++;
-            if (ano % 4 === 0) {
-              document.write(ano + "<br>");
-            }
-          }
-      */
-
-      /* 2° exemplo */
-
+      // 1° Exemplo comentado:
+      /*
+      // Cria uma variável para contar quantas vezes o loop será executado.
       let contador = 0;
 
-      for (let ano = 1004; ano <= 2024; ano += 4) {
+      // Percorre os anos de 1004 até 2024, aumentando o ano de 1 em 1.
+      for (let ano = 1004; ano <= 2024; ano++) {
+        // Aumenta o contador em 1 a cada repetição do loop.
         contador++;
+
+        // Verifica se o ano é divisível por 4.
+        if (ano % 4 === 0) {
+          // Exibe o ano caso ele seja divisível por 4.
+          document.write(ano + "<br>");
+        }
+      }
+
+      // Exibe no console quantas vezes o loop foi executado.
+      console.log(contador);
+      */
+
+      // 2° Exemplo:
+
+      // Cria uma variável para contar quantas vezes o loop será executado.
+      let contador = 0;
+
+      // Percorre os anos de 1004 até 2024, aumentando o ano de 4 em 4.
+      for (let ano = 1004; ano <= 2024; ano += 4) {
+        // Aumenta o contador em 1 a cada repetição do loop.
+        contador++;
+
+        // Exibe o ano atual na tela.
         document.write(ano + "<br>");
       }
 
+      // Exibe no console quantas vezes o segundo loop foi executado.
       console.log(contador);
     </script>
   </body>

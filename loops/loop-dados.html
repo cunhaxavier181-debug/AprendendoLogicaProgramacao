@@ -10,50 +10,37 @@
     <h1>loop - dados</h1>
 
     <script>
-      /* ===================================================================
-        jogue um dado e guarde o número 
-        jogue o outro dado e gaurde o número 
-        crie um contador = 0 
-        enquanto o dado1 for diferente do dado2 
-        some um ao conatados 
-        jogue novamente os dados
-        
-        mostre na tela qual o número que se repetiu e quantas vezes os 
-        dados foram jogados
-
-        vamos lá: esse Math.random() faz com que eu crie um número randomico, 
-        então eu coloco Math.random() * 6 + 1 para ele criar números próximos 
-        de 5.999999 alguma coisa, porém ele nunca passa de 6, aí eu coloco 
-        antes de tudo isso o parseInt para que ele transforme esse meu número 
-        randomico em número inteiro
-
-        abaixo eu sobreescrevi a minha variável, martelando um número fixo nela, 
-        com isso o meu while só executa uma vez o meu comando, mesmo ele sendo 
-        true, pois forcei isso quando defini um número para minha variavel em 
-        vez de deixar randomico 
-        =================================================================== */
-
+      // Sorteia um número entre 1 e 6 para o primeiro dado.
       let dado1 = parseInt(Math.random() * 6 + 1);
+
+      // Sorteia um número entre 1 e 6 para o segundo dado.
       let dado2 = parseInt(Math.random() * 6 + 1);
 
+      // Sobrescreve o valor sorteado do primeiro dado e define o valor como 2.
       dado1 = 2;
+
+      // Sobrescreve o valor sorteado do segundo dado e define o valor como 2.
       dado2 = 2;
 
+      // Cria o contador e começa com o valor 1.
       let contador = 1;
 
-      /* =================================================================== 
-        enquanto os meus dados não forem iguais, eu faço jogar novamente, 
-        isso de forma automatica 
-        se while (dado1 !== dado2) for true na primeira vez, nada que esta 
-        dentro será feito, só se for false, aí continua
-        =================================================================== */
-
+      // Executa o loop enquanto os dois dados forem diferentes.
       while (dado1 !== dado2) {
+        // Exibe os valores atuais dos dois dados no console.
         console.log(dado1, dado2);
+
+        // Aumenta o contador em 1.
         contador++;
+
+        // Sorteia novamente um número entre 1 e 6 para o primeiro dado.
         dado1 = parseInt(Math.random() * 6 + 1);
+
+        // Sorteia novamente um número entre 1 e 6 para o segundo dado.
         dado2 = parseInt(Math.random() * 6 + 1);
       }
+
+      // Exibe quantas vezes os dados foram jogados e qual número se repetiu.
       console.log(
         "Os dados foram jogados " +
           contador +
@@ -61,32 +48,42 @@
           dado1,
       );
 
+      // Exibe uma separação no console.
       console.log("-----------");
 
-      /* =================================================================== 
-        abaixo eu sobreescrevi a minha variável, martelando um número fixo 
-        nela, com isso o meu do...while vai se repetir até que essa minha 
-        condição seja falsa,(mesmo ela sendo falsa de 1° vez, ele repetirá 
-        mais uma vez) por isso a diferença no console.log...LEMBRAR DE VER 
-        ISSO NO CONSOLE.LOG PARA QUE EU NÃO FIQUE PERDIDO, VENDO POR LÁ DÁ 
-        PARA SABER EXATAMENTE A DIFERENÇA 
-        =================================================================== */
-
+      // Sorteia novamente um número entre 1 e 6 para o primeiro dado.
       dado1 = parseInt(Math.random() * 6 + 1);
+
+      // Sorteia novamente um número entre 1 e 6 para o segundo dado.
       dado2 = parseInt(Math.random() * 6 + 1);
 
+      // Sobrescreve o valor sorteado do primeiro dado e define o valor como 2.
       dado1 = 2;
+
+      // Sobrescreve o valor sorteado do segundo dado e define o valor como 2.
       dado2 = 2;
 
+      // Reinicia o contador com o valor 1.
       contador = 1;
 
+      // Executa o bloco pelo menos uma vez antes de verificar a condição.
       do {
+        // Exibe os valores atuais dos dois dados no console.
         console.log(dado1, dado2);
+
+        // Aumenta o contador em 1.
         contador++;
+
+        // Sorteia novamente um número entre 1 e 6 para o primeiro dado.
         dado1 = parseInt(Math.random() * 6 + 1);
+
+        // Sorteia novamente um número entre 1 e 6 para o segundo dado.
         dado2 = parseInt(Math.random() * 6 + 1);
+
+        // Continua o loop enquanto os dois dados forem diferentes.
       } while (dado1 !== dado2);
 
+      // Exibe quantas vezes os dados foram jogados e qual número se repetiu.
       console.log(
         "Os dados foram jogados " +
           contador +

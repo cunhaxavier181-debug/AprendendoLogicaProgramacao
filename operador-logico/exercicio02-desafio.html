@@ -10,17 +10,17 @@
     <h1>Desafio</h1>
 
     <script>
+      // Pede para o usuário digitar a primeira nota e converte o valor para número decimal.
       let n1 = parseFloat(prompt("dígite a nota 1"));
+
+      // Pede para o usuário digitar a segunda nota e converte o valor para número decimal.
       let n2 = parseFloat(prompt("dígite a nota 2"));
 
+      // Soma as duas notas e divide o resultado por 2 para calcular a média.
       let media = (n1 + n2) / 2;
 
-      /* =================================================================== 
-        para que ele esteja reprovado a media tem que ser igual ou inferior 
-        a 4, então se minha média der maior que 4, o meu alert vai aparecer 
-        como false, pois não estarei reprovado 
-        =================================================================== */
-
+      // Verifica se a média é menor ou igual a 4 OU se alguma das notas é igual a 0.
+      // Basta uma das condições ser verdadeira para o resultado ser true.
       alert("Está reprovado? " + (media <= 4 || n1 == 0 || n2 == 0));
     </script>
   </body>
