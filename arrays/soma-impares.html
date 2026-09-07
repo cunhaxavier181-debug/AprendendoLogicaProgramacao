@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio</title>
+  </head>
+
+  <body>
+    <h1>Desafio</h1>
+    <p>
+      Dado um array de números, mostre em um alert a soma dos números ímpares
+    </p>
+
+    <script>
+  // Cria um array contendo vários números
+  const arr = [2, 3, 5, 6, 2, 1, 0, 9];
+
+  // Variável que armazenará a soma dos números ímpares
+  let somaImpares = 0;
+
+  // Percorre todas as posições do array
+  for (let i = 0; i < arr.length; i++) {
+
+    // Armazena o valor atual do array na variável n
+    let n = arr[i];
+
+    // Verifica se o número é ímpar
+    // Um número ímpar deixa resto diferente de 0 ao ser dividido por 2
+    // if (!(n % 2 === 0)) {  // Outra forma de fazer a mesma verificação
+    if (n % 2 !== 0) {
+
+      // Soma o número ímpar encontrado à variável somaImpares
+      somaImpares += n;
+    }
+  }
+
+  // Exibe o resultado da soma dos números ímpares
+  alert("A soma dos ímpares é " + somaImpares);
+</script>
+  </body>
+</html>

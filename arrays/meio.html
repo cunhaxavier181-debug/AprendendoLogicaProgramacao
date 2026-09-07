@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio</title>
+  </head>
+
+  <body>
+    <h1>Desafio</h1>
+    <p>número que está no meio</p>
+
+    <script>
+      // Cria um array chamado "numeros" com vários tipos de dados
+      const numeros = [
+        true, // Valor booleano verdadeiro
+        5, // Número inteiro
+        6, // Número inteiro
+        undefined, // Valor indefinido
+        78, // Número inteiro
+        null, // Valor nulo
+        56, // Número inteiro
+        36, // Número inteiro (elemento do meio)
+        35, // Número inteiro
+        Boolean, // Referência à função Boolean
+        78, // Número inteiro
+        982, // Número inteiro
+        365, // Número inteiro
+        [], // Array vazio
+        false, // Valor booleano falso
+      ];
+
+      // Calcula a posição central do array
+      // numeros.length retorna 15
+      // 15 / 2 = 7.5
+      // parseInt() remove a parte decimal e retorna 7
+      let meio = parseInt(numeros.length / 2);
+
+      // Exibe uma mensagem com o elemento que está na posição central do array
+      // numeros[7] corresponde ao valor 36
+      alert("O elemento que está no meio é o " + numeros[meio]);
+    </script>
+  </body>
+</html>
