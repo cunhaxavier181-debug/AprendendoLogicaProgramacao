@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio</title>
+  </head>
+
+  <body>
+    <h1>Desafio</h1>
+
+    <script>
+      // Dado um array contendo diversos valores,
+      // somar apenas os números pares e exibir o resultado.
+
+      const arr = [
+        null,
+        5,
+        3,
+        2,
+        8,
+        14,
+        Boolean,
+        String,
+        10,
+        26,
+        undefined,
+        80,
+      ];
+
+      // Variável acumuladora da soma dos números pares
+      let somaPares = 0;
+
+      // Percorre todos os elementos do array
+      for (let i = 0; i < arr.length; i++) {
+        // Armazena o elemento atual em uma variável auxiliar
+        let n = arr[i];
+
+        // Verifica se o valor é do tipo number
+        // e se é divisível por 2 (ou seja, é par)
+        if (typeof n === "number" && n % 2 === 0) {
+          // Adiciona o número par encontrado à soma
+          somaPares += n;
+        }
+      }
+
+      // Exibe o resultado da soma dos números pares
+      alert("A soma dos números pares é " + somaPares);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boolean</title>
+  </head>
+
+  <body>
+    <h1>Boolean</h1>
+
+    <p>
+      dado um array qualquer, mostre um alert um 'boolean indicando se encontrou
+      um dos seguintes valores nesse array: null, undefined ou NaN
+    </p>
+
+    <script>
+      // Array com alguns valores, incluindo null
+      const arr = [2, null, 89, 5, 6, 1, 0];
+
+      // Variável que indicará se encontrou algum valor inválido
+      let encontrou = false;
+
+      // Percorre todos os elementos do array
+      for (let i = 0; i < arr.length; i++) {
+        // Armazena o elemento atual em uma variável
+        let n = arr[i];
+
+        // Verifica se o valor é:
+        // - null
+        // - undefined
+        // - NaN
+        if (n === null || n === undefined || isNaN(n)) {
+          encontrou = true; // Marca que encontrou um valor procurado
+          break; // Interrompe o laço, pois já encontrou um caso válido
+        }
+      }
+
+      // Exibe o resultado da busca
+      alert("Encontrou null, undefined ou NaN? " + encontrou);
+    </script>
+  </body>
+</html>

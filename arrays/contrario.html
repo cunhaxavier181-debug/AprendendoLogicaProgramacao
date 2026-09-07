@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nomes ao Contrário</title>
+  </head>
+
+  <body>
+    <h1>Contrário</h1>
+
+    <script>
+      // Array contendo os nomes que serão exibidos na página
+      const nomes = ["Amanda", "Beatriz", "Daniel", "Janaina", "Marcos"];
+
+      // Inicia o laço a partir da última posição do array
+      // (nomes.length - 1) e vai diminuindo até chegar ao índice 0
+
+      for (let i = nomes.length - 1; i >= 0; i--) {
+        // Exibe o nome correspondente ao índice atual
+        // seguido de uma quebra de linha (<br>)
+        // Dessa forma, os nomes aparecem em ordem inversa:
+        // Daniel, Beatriz e Amanda
+        document.write(nomes[i] + "<br>");
+      }
+    </script>
+  </body>
+</html>
