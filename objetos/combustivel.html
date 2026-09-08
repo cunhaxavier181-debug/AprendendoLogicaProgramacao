@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combustível</title>
+  </head>
+
+  <body>
+    <h1>Combustível</h1>
+
+    <script>
+      // Criei uma constante chamada "carro".
+      // Ela guarda várias informações sobre um carro em um único lugar.
+      const carro = {
+        // Modelo do carro.
+        modelo: "Uno",
+
+        // Ano de fabricação do carro.
+        ano: 2023,
+
+        // Quantos quilômetros o carro já percorreu.
+        km: 10000,
+
+        // Tipo de combustível utilizado pelo carro.
+        combustivel: "gasolina",
+
+        // Quantos litros de combustível foram consumidos.
+        litrosConsumidos: 625,
+      };
+
+      // Calcula o consumo médio do carro.
+      // Dividimos a quilometragem total pelos litros consumidos.
+      const consumoMedio = carro.km / carro.litrosConsumidos;
+
+      // document.write() serve para escrever algo diretamente na página.
+
+      // Utilizamos uma template string (texto entre crases ` `)
+      // para misturar texto comum com valores armazenados no objeto "carro"
+      // e também mostrar o consumo médio calculado anteriormente.
+      document.write(
+        `O ${carro.modelo} ${carro.ano} faz em média ${consumoMedio} Km/L se o combustivel for ${carro.combustivel}`,
+      );
+    </script>
+  </body>
+</html>

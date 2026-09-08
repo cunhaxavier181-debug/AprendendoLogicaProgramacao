@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marca Carro</title>
+  </head>
+
+  <body>
+    <h1>Marca Carro</h1>
+
+    <script>
+      // Criando um objeto chamado "carro" para armazenar informações do veículo.
+      const carro = {
+        marca: "Fiat", // Marca do carro
+        modelo: "Uno", // Modelo do carro
+        ano: 2023, // Ano de fabricação
+        km: 10000, // Quilometragem percorrida
+        combustivel: "gasolina", // Tipo de combustível utilizado
+        litrosConsumidos: 625, // Quantidade de litros consumidos
+      };
+
+      // Calcula o consumo médio do carro.
+      // Dividimos a quilometragem total pelos litros consumidos.
+      const consumoMedio = carro.km / carro.litrosConsumidos;
+
+      // document.write() escreve conteúdo diretamente na página.
+      // Utilizamos uma template string (texto entre crases)
+      // para misturar texto com os valores armazenados no objeto.
+      document.write(
+        `O carro ${carro.marca} ${carro.modelo} ano ${carro.ano} faz em média ${consumoMedio} Km/L se o combustível for ${carro.combustivel}`,
+      );
+    </script>
+  </body>
+</html>
