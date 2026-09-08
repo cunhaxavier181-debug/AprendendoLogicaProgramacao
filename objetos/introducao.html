@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objetos</title>
+  </head>
+
+  <body>
+    <h1>Objetos</h1>
+
+    <script>
+      // Criei uma constante chamada "caneta".
+      // Dentro dela, colocamos um objeto que representa uma caneta.
+      const caneta = {
+        // "nome" é uma propriedade que guarda o nome do produto.
+        nome: "caneta",
+
+        // "preco" é uma propriedade que guarda o preço da caneta.
+        preco: 2,
+
+        // "quantidade" é uma propriedade que informa quantas unidades existem no estoque.
+        quantidade: 5,
+      };
+
+      // document.write() escreve alguma coisa diretamente na página HTML.
+      //
+      // caneta.nome acessa o valor da propriedade "nome" do objeto.
+      // caneta.preco acessa o valor da propriedade "preco".
+      // caneta.quantidade acessa o valor da propriedade "quantidade".
+      //
+      // O operador + é usado aqui para juntar textos e valores.
+      document.write(
+        caneta.nome +
+          " custa R$ " +
+          caneta.preco +
+          " e há " +
+          caneta.quantidade +
+          " uniddades em estoque",
+        "<br>",
+      );
+
+      // Também podemos escrever as informações do objeto usando
+      // uma "template string", que é um texto escrito entre crases (`).
+      //
+      // ${caneta.nome} pega o valor da propriedade "nome".
+      // ${caneta.preco} pega o valor da propriedade "preco".
+      // ${caneta.quantidade} pega o valor da propriedade "quantidade".
+      //
+      // Essa forma costuma ser mais fácil de ler quando precisamos
+      // misturar textos com várias informações.
+      document.write(
+        ` ${caneta.nome} custa R$ ${caneta.preco} e há ${caneta.quantidade} unidades em estoque`,
+        "<br>",
+      );
+    </script>
+  </body>
+</html>
