@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Obejtos</title>
+  </head>
+
+  <body>
+    <h1>Pessoa</h1>
+
+    <script>
+      // Criei um objeto chamado endereco.
+      // Um objeto serve para agrupar informações relacionadas.
+      const endereco = {
+        logradouro: "Rua Dinamarca", // Nome da rua
+        numero: 72, // Número da residência
+      };
+
+      // Criei outro objeto chamado pessoa.
+      const pessoa = {
+        nome: "João", // Nome da pessoa
+        sobrenome: "Fagundes", // Sobrenome da pessoa
+
+        // Como já existe uma variável chamada endereco,
+        // podemos simplesmente escrever "endereco".
+        // Isso é um atalho do JavaScript para:
+        // endereco: endereco
+        endereco,
+      };
+
+      // Exibe o objeto completo no console do navegador.
+      console.log(pessoa);
+    </script>
+  </body>
+</html>
