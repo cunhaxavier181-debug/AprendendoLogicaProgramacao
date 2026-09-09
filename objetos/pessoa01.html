@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Obejtos</title>
+  </head>
+
+  <body>
+    <h1>Pessoa</h1>
+
+    <script>
+      // Cria um objeto para armazenar o endereço da pessoa.
+      const endereco = {
+        // Armazena o nome da rua.
+        logradouro: "Rua Dinamarca",
+
+        // Armazena o número da residência.
+        numero: 72,
+      };
+
+      // Cria um objeto para armazenar os dados da pessoa.
+      const pessoa = {
+        // Armazena o nome da pessoa.
+        nome: "João",
+
+        // Armazena o sobrenome da pessoa.
+        sobrenome: "Fagundes",
+
+        // Adiciona o objeto "endereco" dentro do objeto "pessoa".
+        // Como o nome da propriedade é igual ao nome da variável,
+        // basta escrever apenas "endereco".
+        endereco,
+      };
+
+      // Exibe uma frase utilizando os dados do objeto pessoa
+      // e também as informações do objeto endereco.
+      document.write(
+        `O ${pessoa.nome} mora em ${pessoa.endereco.logradouro}, número ${pessoa.endereco.numero}`,
+      );
+    </script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Obejtos</title>
+  </head>
+
+  <body>
+    <h1>Pessoa</h1>
+
+    <script>
+      // Cria um objeto chamado "endereco".
+      // Dentro dele temos duas propriedades: logradouro e numero.
+      const endereco = {
+        logradouro: "Rua Dinamarca",
+        numero: 72,
+      };
+
+      // Cria um objeto chamado "pessoa".
+      // Ele possui as propriedades nome, sobrenome e endereco.
+      const pessoa = {
+        nome: "João",
+        sobrenome: "Fagundes",
+        endereco,
+      };
+
+      // Mostra uma frase na página usando informações do objeto "pessoa".
+      // pessoa.nome acessa o nome da pessoa.
+      // pessoa.endereco.logradouro acessa o logradouro dentro do objeto endereco.
+      // pessoa.endereco.numero acessa o número dentro do objeto endereco.
+      document.write(
+        `O ${pessoa.nome} mora em ${pessoa.endereco.logradouro}, número ${pessoa.endereco.numero}`,
+      );
+
+      // O "for...in" é usado para percorrer as propriedades de um objeto.
+      // A variável "prop" recebe o nome de cada propriedade do objeto "pessoa".
+      for (let prop in pessoa) {
+        // Mostra no console o nome da propriedade atual.
+        // Exemplo: nome, sobrenome e endereco.
+        console.log(prop);
+
+        // Os colchetes permitem usar o conteúdo da variável "prop"
+        // para acessar a propriedade correspondente do objeto.
+        // Se prop for "nome", será igual a pessoa["nome"].
+        // Se prop for "sobrenome", será igual a pessoa["sobrenome"].
+        // Se prop for "endereco", será igual a pessoa["endereco"].
+        console.log(pessoa[prop]);
+      }
+    </script>
+  </body>
+</html>
