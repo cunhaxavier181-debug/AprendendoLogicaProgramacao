@@ -17,8 +17,25 @@
 
     <input type="text" name="" id="user" value="" />
 
+    <hr />
+
+    <h2>Lista de tarefas</h2>
+
+    <ol id="listaTarefas">
+      <li>Aprender CSS</li>
+      <li>Aprender Javascript</li>
+      <li>aprender DOM profudamente</li>
+      <li>Criar algo</li>
+    </ol>
+
     <script>
       document.getElementById("titulo").textContent = "titulo alterado 2";
+
+      const lista = document.getElementById("listaTarefas");
+
+      let novaTarefa = "";
+
+      lista.innerHTML += "<li>Aplicar à vagas de emprego</li>";
     </script>
   </body>
 </html>

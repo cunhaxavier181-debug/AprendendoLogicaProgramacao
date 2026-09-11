@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrays e Objetos</title>
+  </head>
+
+  <body>
+    <ul id="listaPessoas"></ul>
+
+    <script>
+      // Criamos um array chamado "pessoas"
+      // Dentro dele temos vários objetos
+      const pessoas = [
+        // Cada objeto representa uma pessoa
+        { nome: "Daniel", email: "daniel@server" },
+        { nome: "Maria", email: "maria@server" },
+        { nome: "João", email: "joao@server" },
+        { nome: "Luciane", email: "luciane@server" },
+        { nome: "Ricardo", email: "ricardo@server" },
+      ];
+
+      // Procuramos no HTML o elemento que possui
+      // o id "listaPessoas"
+      const listaPessoas = document.getElementById("listaPessoas");
+
+      // O "for" vai percorrer todas as pessoas do array
+      for (let i = 0; i < pessoas.length; i++) {
+        // Mostra o email da pessoa atual no console
+        console.log(pessoas[i].email);
+
+        // Adiciona uma nova pessoa dentro da lista
+        //
+        // pessoas[i].nome = nome da pessoa atual
+        // pessoas[i].email = email da pessoa atual
+        //
+        // O "+=" adiciona sem apagar o que já está na lista
+        listaPessoas.innerHTML +=
+          "<li>" + pessoas[i].nome + ": " + pessoas[i].email + "</li>";
+      }
+    </script>
+  </body>
+</html>
