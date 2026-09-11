@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabela de Produtos</title>
+
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid rgba(0, 0, 0, 0.527);
+      }
+
+      th,
+      td {
+        padding: 10px;
+      }
+
+      td + td {
+        text-align: right;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Tabela de Produtos</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Produto</th>
+          <th>Preço</th>
+          <th>Quantidade em estoque</th>
+        </tr>
+      </thead>
+
+      <tbody id="tabelaProdutos"></tbody>
+    </table>
+
+    <script>
+      // Cria uma constante chamada "produtos" que recebe um array.
+      const produtos = [
+        // Cada objeto representa um produto com nome, preço e quantidade em estoque.
+        { nome: "caneta", preco: 2, estoque: 3 },
+        { nome: "lápis", preco: 1.5, estoque: 4 },
+        { nome: "borracha", preco: 0.75, estoque: 0 },
+        { nome: "caderno", preco: 2.3, estoque: 1 },
+        { nome: "régua", preco: 4, estoque: 5 },
+      ];
+
+      // Procura no HTML um elemento que tenha o id "tabelaProdutos".
+      // Nesse caso, encontra o <tbody> da tabela.
+      const tabelaProdutos = document.getElementById("tabelaProdutos");
+
+      // Cria um loop que começa com i = 0.
+      // O loop continua enquanto i for menor que a quantidade de produtos.
+      // A cada repetição, i aumenta 1.
+      for (let i = 0; i < produtos.length; i++) {
+        // Adiciona uma nova linha (<tr>) dentro do <tbody>.
+        // produtos[i] acessa o objeto correspondente à posição atual do array.
+        tabelaProdutos.innerHTML += `<tr>
+
+      // Mostra o nome do produto dentro de uma célula <td>.
+      <td>${produtos[i].nome}</td>
+
+      // Mostra o preço do produto.
+      // toFixed(2) transforma o número para ficar com duas casas decimais.
+      <td>R$ ${produtos[i].preco.toFixed(2)}</td>
+
+      // Mostra a quantidade do produto disponível no estoque.
+      <td>${produtos[i].estoque}</td>
+
+    </tr>`;
+      }
+    </script>
+  </body>
+</html>
