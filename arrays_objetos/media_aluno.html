@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notas</title>
+  </head>
+
+  <body>
+    <h1>Notas Bimestrais</h1>
+
+    <div id="output">
+      <!-- <h2>nome 1</h2>
+
+      <p>Notas:</p>
+
+      <ul>
+        <li>1</li>
+        <li>3</li>
+        <li>3</li>
+        <li>8</li>
+      </ul>
+
+      <p>Média: 3</p>
+
+      <p>Aprovado? Não</p> -->
+    </div>
+
+    <script>
+      // Cria um objeto com o nome e as notas do aluno.
+      const aluno = {
+        nome: "Marcos Venicio",
+        notas: [8, 8, 6, 8],
+      };
+
+      // Localiza a div onde os dados serão exibidos.
+      const output = document.getElementById("output");
+
+      // Exibe o nome do aluno.
+      output.innerHTML = "<h2> Aluno: " + aluno.nome + "</h2>";
+
+      // Cria o título da lista de notas.
+      output.innerHTML += "<p> Notas: </p>";
+
+      // Abre a lista não ordenada.
+      output.innerHTML += "<ul>";
+
+      // Guarda a soma de todas as notas.
+      let soma = 0;
+
+      // Percorre todas as notas do aluno.
+      for (let i = 0; i < aluno.notas.length; i++) {
+        // Soma a nota atual ao total.
+        soma += aluno.notas[i];
+
+        // Adiciona a nota atual à lista.
+        output.innerHTML += "<li>" + aluno.notas[i] + "</li>";
+      }
+
+      // Calcula a média dividindo a soma pela quantidade de notas.
+      let media = soma / aluno.notas.length;
+
+      // Fecha a lista de notas.
+      output.innerHTML += "</ul>";
+
+      // Exibe a média calculada.
+      output.innerHTML += "<p> Média: " + media + "</p>";
+
+      // Operador ternário: se média >= 7, aprovado é "Sim"; caso contrário, "Não".
+      let aprovado = media >= 7 ? "Sim" : "Não";
+
+      // Forma tradicional equivalente ao operador ternário acima.
+      // if (media >= 7) {
+      //   aprovado = "Sim";
+      // } else {
+      //   aprovado = "Não";
+      // }
+
+      // Exibe o resultado da aprovação.
+      output.innerHTML += "Aprovado? " + aprovado;
+    </script>
+  </body>
+</html>

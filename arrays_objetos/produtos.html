@@ -43,8 +43,10 @@
 
     <script>
       // Cria uma constante chamada "produtos" que recebe um array.
+
       const produtos = [
         // Cada objeto representa um produto com nome, preço e quantidade em estoque.
+
         { nome: "caneta", preco: 2, estoque: 3 },
         { nome: "lápis", preco: 1.5, estoque: 4 },
         { nome: "borracha", preco: 0.75, estoque: 0 },
@@ -54,27 +56,24 @@
 
       // Procura no HTML um elemento que tenha o id "tabelaProdutos".
       // Nesse caso, encontra o <tbody> da tabela.
+
       const tabelaProdutos = document.getElementById("tabelaProdutos");
 
       // Cria um loop que começa com i = 0.
       // O loop continua enquanto i for menor que a quantidade de produtos.
       // A cada repetição, i aumenta 1.
+
       for (let i = 0; i < produtos.length; i++) {
         // Adiciona uma nova linha (<tr>) dentro do <tbody>.
         // produtos[i] acessa o objeto correspondente à posição atual do array.
+        // Mostra o nome do produto dentro de uma célula
+        // Mostra o preço do produto.
+        // toFixed(2) transforma o número para ficar com duas casas decimais.
+        // Mostra a quantidade do produto disponível no estoque.
+
         tabelaProdutos.innerHTML += `<tr>
-
-      // Mostra o nome do produto dentro de uma célula <td>.
-      <td>${produtos[i].nome}</td>
-
-      // Mostra o preço do produto.
-      // toFixed(2) transforma o número para ficar com duas casas decimais.
-      <td>R$ ${produtos[i].preco.toFixed(2)}</td>
-
-      // Mostra a quantidade do produto disponível no estoque.
-      <td>${produtos[i].estoque}</td>
-
-    </tr>`;
+        <td>${produtos[i].nome}</td> <td>R$ ${produtos[i].preco.toFixed(2)}</td>      
+        <td>${produtos[i].estoque}</td></tr>`;
       }
     </script>
   </body>
