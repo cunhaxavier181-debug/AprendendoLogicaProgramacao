@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Média dos alunos - desafio</title>
+  </head>
+
+  <body>
+    <h1>Média dos alunos - desafio</h1>
+
+    <ul id="listaAlunos"></ul>
+
+    <script>
+      // Lista de alunos, cada um com seu nome e suas notas.
+      const alunos = [
+        {
+          nome: "Marcos",
+          notas: [1, 3, 3, 8],
+        },
+        {
+          nome: "Janaina",
+          notas: [10, 7, 9, 8],
+        },
+        {
+          nome: "João",
+          notas: [10, 6, 3, 0],
+        },
+      ];
+
+      // Localiza a lista onde os resultados serão exibidos.
+      const listaAlunos = document.getElementById("listaAlunos");
+
+      // Guarda o HTML que será criado para cada aluno.
+      let alunosHTML = "";
+
+      // Percorre todos os alunos da lista.
+      for (let i = 0; i < alunos.length; i++) {
+        // Começa o item exibindo o nome do aluno.
+        alunosHTML += "<li>" + alunos[i].nome + ", média: ";
+
+        // Zera a soma para começar a calcular o aluno atual.
+        let soma = 0;
+
+        // Percorre todas as notas do aluno atual.
+        for (let j = 0; j < alunos[i].notas.length; j++) {
+          // Mostra no console os índices usados nos dois loops.
+          console.log("i:", i, "j:", j);
+
+          // Soma cada nota ao total acumulado.
+          soma += alunos[i].notas[j];
+        }
+
+        // Divide a soma pela quantidade de notas para obter a média.
+        let media = soma / alunos[i].notas.length;
+
+        // Adiciona a média ao HTML e fecha o item do aluno.
+        alunosHTML += media + "</li>";
+      }
+
+      // Exibe todos os resultados na lista da página.
+      listaAlunos.innerHTML = alunosHTML;
+    </script>
+
+    <!-- ============================================================
+      A parte mais importante para entender aqui é que existem dois for:
+      o primeiro percorre os alunos e o segundo percorre as notas do 
+      aluno atual. 
+      ============================================================ -->
+  </body>
+</html>
