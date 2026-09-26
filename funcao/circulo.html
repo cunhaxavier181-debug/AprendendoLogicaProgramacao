@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Área do circulo</title>
+  </head>
+
+  <body>
+    <h1>Área do circulo</h1>
+
+    <label
+      >Raio
+      <input type="number" id="raio" />
+    </label>
+
+    <button onclick="mostrarArea()">Calcular a área</button>
+
+    <br />
+
+    <output id="output"></output>
+
+    <script>
+      // Captura o campo onde o usuário informa o raio.
+      const raio = document.getElementById("raio");
+
+      // Captura o elemento onde o resultado será exibido.
+      const output = document.getElementById("output");
+
+      // Função responsável por calcular e mostrar a área.
+      function mostrarArea() {
+        // Pega o valor do raio e transforma em número.
+        let raioValue = Number(raio.value);
+
+        // Calcula a área usando π × raio².
+        let area = Math.PI * raioValue ** 2;
+
+        // Exibe o resultado do cálculo na página.
+        output.innerHTML = `A área da circunferência de raio ${raioValue} é: ${area}`;
+      }
+    </script>
+  </body>
+</html>
