@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Função</title>
+  </head>
+
+  <body>
+    <h1>Função</h1>
+
+    <input type="number" id="number" value="" />
+
+    <button onclick="mostrarTabuada()">Mostrar tabuada</button>
+
+    <button onclick="limparTabuada()">Limpar Tabuada</button>
+
+    <div id="output"></div>
+
+    <script>
+      // Captura o campo onde o usuário informa o número.
+      const input = document.getElementById("number");
+
+      // Captura a área onde a tabuada será exibida.
+      const output = document.getElementById("output");
+
+      // Armazena o HTML da tabuada antes de exibi-lo.
+      let tabuadaHTML = "";
+
+      // Função responsável por calcular e mostrar a tabuada.
+      function mostrarTabuada() {
+        // Converte o valor digitado de texto para número.
+        const inputValue = Number(input.value);
+
+        // Limpa uma tabuada anterior antes de criar uma nova.
+        limparTabuada();
+
+        // Repete o cálculo de 0 até 100.
+        for (let i = 0; i <= 100; i++) {
+          // Monta cada linha da tabuada.
+          tabuadaHTML += `${inputValue} x ${i} = ${inputValue * i} <br>`;
+        }
+
+        // Exibe a tabuada pronta na página.
+        output.innerHTML = tabuadaHTML;
+      }
+
+      // Função responsável por apagar a tabuada.
+      function limparTabuada() {
+        // Apaga todo o conteúdo armazenado.
+        tabuadaHTML = "";
+
+        // Remove a tabuada da página.
+        output.innerHTML = "";
+      }
+
+      // Executa a função automaticamente ao carregar a página.
+      mostrarTabuada();
+    </script>
+  </body>
+</html>
