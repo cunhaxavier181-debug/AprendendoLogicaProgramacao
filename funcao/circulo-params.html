@@ -22,23 +22,36 @@
       <output id="output"></output>
 
       <script>
+         // Captura o campo onde o usuário pode informar o raio.
          const raio = document.getElementById("raio");
 
+         // Captura o elemento onde o resultado será exibido.
          const output = document.getElementById("output");
 
+         // Pega o raio através de uma caixa de diálogo.
          function mostrarAreaDoPrompt() {
+            // Solicita o raio e transforma o valor recebido em número decimal.
             let raioValue = parseFloat(prompt("digite o raio"));
+
+            // Envia o valor para a função que calcula a área.
             mostrarArea(raioValue);
          }
 
+         // Pega o raio digitado no campo de entrada.
          function mostrarAreaDoInput() {
+            // Pega o valor do input e transforma em número decimal.
             let raioValue = parseFloat(raio.value);
+
+            // Envia o valor para a função que calcula a área.
             mostrarArea(raioValue);
          }
 
+         // Recebe o raio e calcula a área da circunferência.
          function mostrarArea(raio) {
+            // Calcula a área usando π × raio².
             let area = Math.PI * raio ** 2;
 
+            // Exibe o resultado na página.
             output.innerHTML = `A área da circunferência de raio ${raio} é: ${area}`;
          }
       </script>
