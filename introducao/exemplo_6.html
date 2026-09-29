@@ -1,107 +1,107 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exemplo 6</title>
-  </head>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Exemplo 6</title>
+   </head>
 
-  <body>
-    <h1>Boolean, Number e string - typeof</h1>
+   <body>
+      <h1>Boolean, Number e string - typeof</h1>
 
-    <script>
-      // Cria a variável mensagem e armazena um texto dentro dela.
-      // As aspas simples permitem colocar a palavra "mensagem de texto" dentro da string.
-      let mensagem = "olá eu sou uma 'mensagem de texto'";
+      <script>
+         // Cria a variável mensagem e armazena um texto dentro dela.
+         // As aspas simples permitem colocar a palavra "mensagem de texto" dentro da string.
+         let mensagem = "olá eu sou uma 'mensagem de texto'";
 
-      // Exibe o conteúdo da variável mensagem no console.
-      console.log(mensagem);
+         // Exibe o conteúdo da variável mensagem no console.
+         console.log(mensagem);
 
-      // Verifica o tipo do valor 0.
-      console.log(typeof 0);
+         // Verifica o tipo do valor 0.
+         console.log(typeof 0);
 
-      // Verifica o tipo do valor "0".
-      // Apesar de conter o mesmo caractere, "0" é uma string.
-      console.log(typeof "0");
+         // Verifica o tipo do valor "0".
+         // Apesar de conter o mesmo caractere, "0" é uma string.
+         console.log(typeof "0");
 
-      // Converte o número 0 para string e verifica o seu tipo.
-      console.log(typeof String(0));
+         // Converte o número 0 para string e verifica o seu tipo.
+         console.log(typeof String(0));
 
-      // Cria a variável isValid e atribui o valor booleano true.
-      let isValid = true;
+         // Cria a variável isValid e atribui o valor booleano true.
+         let isValid = true;
 
-      // Verifica o tipo armazenado na variável isValid.
-      console.log(typeof isValid);
+         // Verifica o tipo armazenado na variável isValid.
+         console.log(typeof isValid);
 
-      // Converte a string "0" para boolean.
-      // Uma string com conteúdo é considerada true.
-      console.log(Boolean("0"));
+         // Converte a string "0" para boolean.
+         // Uma string com conteúdo é considerada true.
+         console.log(Boolean("0"));
 
-      // Converte o número 0 para boolean.
-      // O número 0 é considerado false.
-      console.log(Boolean(0));
+         // Converte o número 0 para boolean.
+         // O número 0 é considerado false.
+         console.log(Boolean(0));
 
-      // Converte undefined para boolean.
-      // undefined é considerado false.
-      console.log(Boolean(undefined));
+         // Converte undefined para boolean.
+         // undefined é considerado false.
+         console.log(Boolean(undefined));
 
-      // Converte null para boolean.
-      // null é considerado false.
-      console.log(Boolean(null));
+         // Converte null para boolean.
+         // null é considerado false.
+         console.log(Boolean(null));
 
-      // Converte uma string vazia para boolean.
-      // Uma string vazia é considerada false.
-      console.log(Boolean(""));
+         // Converte uma string vazia para boolean.
+         // Uma string vazia é considerada false.
+         console.log(Boolean(""));
 
-      // Converte NaN para boolean.
-      // NaN é considerado false.
-      console.log(Boolean(NaN));
+         // Converte NaN para boolean.
+         // NaN é considerado false.
+         console.log(Boolean(NaN));
 
-      // Cria a variável naoDeclarado e atribui o valor null.
-      // null representa a ausência intencional de um valor.
-      let naoDeclarado = null;
+         // Cria a variável naoDeclarado e atribui o valor null.
+         // null representa a ausência intencional de um valor.
+         let naoDeclarado = null;
 
-      // Exibe o valor armazenado na variável.
-      console.log(naoDeclarado);
+         // Exibe o valor armazenado na variável.
+         console.log(naoDeclarado);
 
-      // Altera o valor da variável para 0.
-      naoDeclarado = 0;
+         // Altera o valor da variável para 0.
+         naoDeclarado = 0;
 
-      // Exibe o novo valor armazenado na variável.
-      console.log(naoDeclarado);
+         // Exibe o novo valor armazenado na variável.
+         console.log(naoDeclarado);
 
-      // Tenta converter a string "a" para um número decimal.
-      // Como "a" não representa um número, o resultado será NaN.
-      let n = parseFloat("a");
+         // Tenta converter a string "a" para um número decimal.
+         // Como "a" não representa um número, o resultado será NaN.
+         let n = parseFloat("a");
 
-      // Exibe o valor armazenado em n.
-      console.log(n);
+         // Exibe o valor armazenado em n.
+         console.log(n);
 
-      // Verifica o tipo de n.
-      // NaN pertence ao tipo number no JavaScript.
-      console.log(typeof n);
+         // Verifica o tipo de n.
+         // NaN pertence ao tipo number no JavaScript.
+         console.log(typeof n);
 
-      // Exibe uma linha separadora no console.
-      console.log("--------");
+         // Exibe uma linha separadora no console.
+         console.log("--------");
 
-      // Verifica o tipo de undefined.
-      console.log(typeof undefined);
+         // Verifica o tipo de undefined.
+         console.log(typeof undefined);
 
-      // Verifica o tipo de null.
-      // Apesar de representar ausência de valor, o resultado é "object".
-      console.log(typeof null);
+         // Verifica o tipo de null.
+         // Apesar de representar ausência de valor, o resultado é "object".
+         console.log(typeof null);
 
-      // Verifica o tipo do número 0.
-      console.log(typeof 0);
+         // Verifica o tipo do número 0.
+         console.log(typeof 0);
 
-      // Verifica o tipo de uma string vazia.
-      console.log(typeof "");
+         // Verifica o tipo de uma string vazia.
+         console.log(typeof "");
 
-      // Verifica o tipo do valor booleano true.
-      console.log(typeof true);
+         // Verifica o tipo do valor booleano true.
+         console.log(typeof true);
 
-      // Converte o número 10 para string e verifica o tipo do resultado.
-      console.log(typeof (10).toString());
-    </script>
-  </body>
+         // Converte o número 10 para string e verifica o tipo do resultado.
+         console.log(typeof (10).toString());
+      </script>
+   </body>
 </html>

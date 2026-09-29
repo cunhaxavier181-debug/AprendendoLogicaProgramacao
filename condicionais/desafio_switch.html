@@ -1,55 +1,55 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Desafio Switch</title>
-  </head>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Desafio Switch</title>
+   </head>
 
-  <body>
-    <h1>Desafio Switch</h1>
+   <body>
+      <h1>Desafio Switch</h1>
 
-    <script>
-      // typeof verifica o tipo de dado armazenado na variável.
-      // Ele retorna uma string, como "number", "string", "boolean" ou "undefined".
-      //
-      // Atenção ao uso de null:
-      // null é um valor especial do JavaScript que representa ausência de valor.
-      // Porém, existe uma particularidade histórica: typeof null retorna "object".
-      // Isso é um comportamento antigo do JavaScript e foi mantido por
-      // compatibilidade com códigos existentes.
-      //
-      // Por esse motivo, se myvar receber null sem aspas:
-      // let myvar = null;
-      //
-      // typeof myvar retornará "object", e nenhum dos cases abaixo será executado.
-      // Neste exemplo, usamos "null" entre aspas para que o valor seja uma string.
-      // Assim, typeof myvar retornará "string" e o segundo case será executado.
+      <script>
+         // typeof verifica o tipo de dado armazenado na variável.
+         // Ele retorna uma string, como "number", "string", "boolean" ou "undefined".
+         //
+         // Atenção ao uso de null:
+         // null é um valor especial do JavaScript que representa ausência de valor.
+         // Porém, existe uma particularidade histórica: typeof null retorna "object".
+         // Isso é um comportamento antigo do JavaScript e foi mantido por
+         // compatibilidade com códigos existentes.
+         //
+         // Por esse motivo, se myvar receber null sem aspas:
+         // let myvar = null;
+         //
+         // typeof myvar retornará "object", e nenhum dos cases abaixo será executado.
+         // Neste exemplo, usamos "null" entre aspas para que o valor seja uma string.
+         // Assim, typeof myvar retornará "string" e o segundo case será executado.
 
-      let myvar = "null";
+         let myvar = "null";
 
-      // O switch compara o resultado de typeof myvar com cada case.
-      switch (typeof myvar) {
-        case "number":
-          alert("myVar é número");
-          break;
+         // O switch compara o resultado de typeof myvar com cada case.
+         switch (typeof myvar) {
+            case "number":
+               alert("myVar é número");
+               break;
 
-        case "string":
-          alert("myVar é texto");
-          break;
+            case "string":
+               alert("myVar é texto");
+               break;
 
-        case "boolean":
-          alert("myVar é boleana");
-          break;
+            case "boolean":
+               alert("myVar é boleana");
+               break;
 
-        case "undefined":
-          alert("myVar é undefined");
-          break;
+            case "undefined":
+               alert("myVar é undefined");
+               break;
 
-        // Caso nenhum dos cases corresponda ao tipo encontrado.
-        default:
-          alert("nenhum tipo conhecido");
-      }
-    </script>
-  </body>
+            // Caso nenhum dos cases corresponda ao tipo encontrado.
+            default:
+               alert("nenhum tipo conhecido");
+         }
+      </script>
+   </body>
 </html>

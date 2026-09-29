@@ -1,33 +1,33 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Loop for</title>
-  </head>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Loop for</title>
+   </head>
 
-  <body>
-    <h1>loop for</h1>
+   <body>
+      <h1>loop for</h1>
 
-    <script>
-      // Pede para o usuário digitar um número e converte o valor para número decimal.
-      let n = parseFloat(prompt("dígite um número"));
+      <script>
+         // Pede para o usuário digitar um número e converte o valor para número decimal.
+         let n = parseFloat(prompt("dígite um número"));
 
-      // Verifica se o valor digitado é um número válido.
-      if (!isNaN(n)) {
-        // Cria a variável i começando em 0, executa enquanto i for menor ou igual a 10
-        // e aumenta o valor de i em 1 a cada repetição.
-        for (let i = 0; i <= 10; i++) {
-          // Exibe a tabuada do número digitado, multiplicando n pelo valor de i.
-          document.write(n + " x " + i + " : " + n * i + "<br>");
-        }
+         // Verifica se o valor digitado é um número válido.
+         if (!isNaN(n)) {
+            // Cria a variável i começando em 0, executa enquanto i for menor ou igual a 10
+            // e aumenta o valor de i em 1 a cada repetição.
+            for (let i = 0; i <= 10; i++) {
+               // Exibe a tabuada do número digitado, multiplicando n pelo valor de i.
+               document.write(n + " x " + i + " : " + n * i + "<br>");
+            }
 
-        // Exibe uma mensagem quando o loop terminar.
-        document.write("saiu do loop");
-      } else {
-        // Exibe uma mensagem caso o usuário não tenha digitado um número válido.
-        alert("dígite apenas número");
-      }
-    </script>
-  </body>
+            // Exibe uma mensagem quando o loop terminar.
+            document.write("saiu do loop");
+         } else {
+            // Exibe uma mensagem caso o usuário não tenha digitado um número válido.
+            alert("dígite apenas número");
+         }
+      </script>
+   </body>
 </html>

@@ -1,39 +1,41 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Desafio</title>
-  </head>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Desafio</title>
+   </head>
 
-  <body>
-    <h1>Desafio Tabuada</h1>
+   <body>
+      <h1>Desafio Tabuada</h1>
 
-    <script>
-      // Pede para o usuário digitar um número e converte o valor para número decimal.
-      let n = parseFloat(prompt("dígite um número"));
+      <script>
+         // Pede para o usuário digitar um número e converte o valor para número decimal.
+         let n = parseFloat(prompt("dígite um número"));
 
-      // Verifica se o valor digitado é um número válido.
-      // O ! significa "não", então a condição será verdadeira quando n não for NaN.
-      if (!isNaN(n)) {
-        // Cria o contador e inicia seu valor em 0.
-        let contador = 0;
+         // Verifica se o valor digitado é um número válido.
+         // O ! significa "não", então a condição será verdadeira quando n não for NaN.
+         if (!isNaN(n)) {
+            // Cria o contador e inicia seu valor em 0.
+            let contador = 0;
 
-        // Executa o loop enquanto o contador for menor ou igual a 10.
-        while (contador <= 10) {
-          // Exibe a multiplicação do número digitado pelo valor atual do contador.
-          document.write(n + " x " + contador + " : " + n * contador + "<br>");
+            // Executa o loop enquanto o contador for menor ou igual a 10.
+            while (contador <= 10) {
+               // Exibe a multiplicação do número digitado pelo valor atual do contador.
+               document.write(
+                  n + " x " + contador + " : " + n * contador + "<br>",
+               );
 
-          // Aumenta o contador em 1 a cada repetição.
-          contador++;
-        }
+               // Aumenta o contador em 1 a cada repetição.
+               contador++;
+            }
 
-        // Exibe uma mensagem quando o cálculo da tabuada terminar.
-        document.write("fim do calculo");
-      } else {
-        // Exibe uma mensagem caso o usuário não tenha digitado um número válido.
-        alert("dígite apenas número");
-      }
-    </script>
-  </body>
+            // Exibe uma mensagem quando o cálculo da tabuada terminar.
+            document.write("fim do calculo");
+         } else {
+            // Exibe uma mensagem caso o usuário não tenha digitado um número válido.
+            alert("dígite apenas número");
+         }
+      </script>
+   </body>
 </html>

@@ -1,33 +1,40 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Arrays</title>
-  </head>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Arrays</title>
+   </head>
 
-  <body>
-    <h1>Arrays</h1>
+   <body>
+      <h1>Arrays</h1>
 
-    <script>
-      // Um array permite armazenar vários valores dentro de uma única variável.
-      // Os elementos são organizados em posições chamadas de índices.
-      // O primeiro índice sempre será 0.
-      // Exemplo: em um array com 6 elementos, os índices serão de 0 até 5.
+      <script>
+         // Um array permite armazenar vários valores dentro de uma única variável.
+         // Os elementos são organizados em posições chamadas de índices.
+         // O primeiro índice sempre será 0.
+         // Exemplo: em um array com 6 elementos, os índices serão de 0 até 5.
 
-      let nomes = ["João", "Maria", "Daniel", "Beatriz", "Ricardo", "Luciane"];
+         let nomes = [
+            "João",
+            "Maria",
+            "Daniel",
+            "Beatriz",
+            "Ricardo",
+            "Luciane",
+         ];
 
-      // Sintaxe literal: os colchetes [] são utilizados para criar o array.
+         // Sintaxe literal: os colchetes [] são utilizados para criar o array.
 
-      // let nomes = new Array("João", "Maria", "Daniel", "Beatriz");
-      // Sintaxe utilizando a função construtora Array().
+         // let nomes = new Array("João", "Maria", "Daniel", "Beatriz");
+         // Sintaxe utilizando a função construtora Array().
 
-      // O for percorre o array começando pelo índice 0.
-      // nomes.length informa a quantidade de elementos existentes no array.
-      // Como os índices começam em 0, usamos "< nomes.length" para percorrer
-      // todos os elementos sem ultrapassar o último índice.
-      for (let i = 0; i < nomes.length; i++)
-        document.write("nome: " + nomes[i] + " <br>");
-    </script>
-  </body>
+         // O for percorre o array começando pelo índice 0.
+         // nomes.length informa a quantidade de elementos existentes no array.
+         // Como os índices começam em 0, usamos "< nomes.length" para percorrer
+         // todos os elementos sem ultrapassar o último índice.
+         for (let i = 0; i < nomes.length; i++)
+            document.write("nome: " + nomes[i] + " <br>");
+      </script>
+   </body>
 </html>

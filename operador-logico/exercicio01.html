@@ -1,31 +1,31 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exercicio 01</title>
-  </head>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Exercicio 01</title>
+   </head>
 
-  <body>
-    <h1>Operadores lógicos</h1>
+   <body>
+      <h1>Operadores lógicos</h1>
 
-    <script>
-      // Pede para o usuário digitar a primeira nota e converte o valor para número decimal.
-      let n1 = parseFloat(prompt("digite a nota 1"));
+      <script>
+         // Pede para o usuário digitar a primeira nota e converte o valor para número decimal.
+         let n1 = parseFloat(prompt("digite a nota 1"));
 
-      // Pede para o usuário digitar a segunda nota e converte o valor para número decimal.
-      let n2 = parseFloat(prompt("digite a nota 2"));
+         // Pede para o usuário digitar a segunda nota e converte o valor para número decimal.
+         let n2 = parseFloat(prompt("digite a nota 2"));
 
-      // Soma as duas notas e divide o resultado por 2 para calcular a média.
-      let media = (n1 + n2) / 2;
+         // Soma as duas notas e divide o resultado por 2 para calcular a média.
+         let media = (n1 + n2) / 2;
 
-      // Verifica se todas as condições são verdadeiras usando o operador E (&&).
-      // Todas as condições precisam ser true para o resultado ser true.
-      alert("Está aprovado? " + (media > 4 && n1 > 0 && n2 > 0));
+         // Verifica se todas as condições são verdadeiras usando o operador E (&&).
+         // Todas as condições precisam ser true para o resultado ser true.
+         alert("Está aprovado? " + (media > 4 && n1 > 0 && n2 > 0));
 
-      // Verifica as condições usando o operador OU (||).
-      // Basta uma das condições ser true para o resultado ser true.
-      alert("Está aprovado? " + ((media > 4 && n1 > 0) || n2 > 0));
-    </script>
-  </body>
+         // Verifica as condições usando o operador OU (||).
+         // Basta uma das condições ser true para o resultado ser true.
+         alert("Está aprovado? " + ((media > 4 && n1 > 0) || n2 > 0));
+      </script>
+   </body>
 </html>

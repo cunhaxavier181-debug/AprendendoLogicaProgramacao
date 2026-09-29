@@ -1,34 +1,34 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
 
-  <body>
-    <h1>loops - tabuada</h1>
+   <body>
+      <h1>loops - tabuada</h1>
 
-    <script>
-      // Define o número que será utilizado para fazer a tabuada.
-      let n = 5;
+      <script>
+         // Define o número que será utilizado para fazer a tabuada.
+         let n = 5;
 
-      // Cria o contador e inicia seu valor em 0.
-      let contador = 0;
+         // Cria o contador e inicia seu valor em 0.
+         let contador = 0;
 
-      // Executa o loop enquanto o contador for menor ou igual a 10.
-      while (contador <= 10) {
-        // Exibe a multiplicação do número pelo valor atual do contador.
-        document.write(n + " x " + contador + ": " + n * contador + "<br>");
+         // Executa o loop enquanto o contador for menor ou igual a 10.
+         while (contador <= 10) {
+            // Exibe a multiplicação do número pelo valor atual do contador.
+            document.write(n + " x " + contador + ": " + n * contador + "<br>");
 
-        // Aumenta o contador em 1 a cada repetição.
-        // Sem essa linha, a condição do while continuaria sendo verdadeira
-        // e o loop ficaria infinito, podendo travar a aba do navegador.
-        contador++;
-      }
+            // Aumenta o contador em 1 a cada repetição.
+            // Sem essa linha, a condição do while continuaria sendo verdadeira
+            // e o loop ficaria infinito, podendo travar a aba do navegador.
+            contador++;
+         }
 
-      // Exibe uma mensagem quando o loop terminar.
-      document.write("saiu do loop");
-    </script>
-  </body>
+         // Exibe uma mensagem quando o loop terminar.
+         document.write("saiu do loop");
+      </script>
+   </body>
 </html>

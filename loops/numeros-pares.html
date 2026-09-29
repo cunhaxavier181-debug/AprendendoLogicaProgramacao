@@ -1,25 +1,25 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
 
-  <body>
-    <h1>loops - números pares</h1>
+   <body>
+      <h1>loops - números pares</h1>
 
-    <script>
-      // Pede para o usuário digitar um número e converte o valor para inteiro.
-      let n = parseInt(prompt("dígite um número"));
+      <script>
+         // Pede para o usuário digitar um número e converte o valor para inteiro.
+         let n = parseInt(prompt("dígite um número"));
 
-      // Cria a variável i e começa com o valor 2.
-      let i = 2;
+         // Cria a variável i e começa com o valor 2.
+         let i = 2;
 
-      // -------------------------------------------------------------
-      // Exemplo utilizando o loop while.
-      // O while só executaria enquanto i fosse menor ou igual a n.
-      /*
+         // -------------------------------------------------------------
+         // Exemplo utilizando o loop while.
+         // O while só executaria enquanto i fosse menor ou igual a n.
+         /*
       while (i <= n) {
         // Exibe o valor atual de i no console.
         console.log(i);
@@ -29,16 +29,16 @@
       }
       */
 
-      // Executa o bloco de código pelo menos uma vez.
-      do {
-        // Exibe o número par atual no console.
-        console.log(i);
+         // Executa o bloco de código pelo menos uma vez.
+         do {
+            // Exibe o número par atual no console.
+            console.log(i);
 
-        // Aumenta i em 2 para passar para o próximo número par.
-        i += 2;
+            // Aumenta i em 2 para passar para o próximo número par.
+            i += 2;
 
-        // Verifica se i ainda é menor ou igual ao número digitado.
-      } while (i <= n);
-    </script>
-  </body>
+            // Verifica se i ainda é menor ou igual ao número digitado.
+         } while (i <= n);
+      </script>
+   </body>
 </html>

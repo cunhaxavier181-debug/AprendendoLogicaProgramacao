@@ -1,62 +1,62 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Notas</title>
-  </head>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Notas</title>
+   </head>
 
-  <body>
-    <h1>Notas Bimestrais dos alunos</h1>
+   <body>
+      <h1>Notas Bimestrais dos alunos</h1>
 
-    <ul id="listaAlunos"></ul>
+      <ul id="listaAlunos"></ul>
 
-    <script>
-      // Lista de alunos, onde cada aluno possui nome e suas notas.
-      const alunos = [
-        {
-          nome: "Marcos",
-          notas: [1, 3, 3, 8],
-        },
-        {
-          nome: "Janaina",
-          notas: [10, 7, 9, 8],
-        },
-        {
-          nome: "João",
-          notas: [10, 6, 3, 0],
-        },
-      ];
+      <script>
+         // Lista de alunos, onde cada aluno possui nome e suas notas.
+         const alunos = [
+            {
+               nome: "Marcos",
+               notas: [1, 3, 3, 8],
+            },
+            {
+               nome: "Janaina",
+               notas: [10, 7, 9, 8],
+            },
+            {
+               nome: "João",
+               notas: [10, 6, 3, 0],
+            },
+         ];
 
-      // Localiza a lista <ul> onde os alunos serão exibidos.
-      const listaAlunos = document.getElementById("listaAlunos");
+         // Localiza a lista <ul> onde os alunos serão exibidos.
+         const listaAlunos = document.getElementById("listaAlunos");
 
-      // Variável que vai montar todo o HTML antes de inseri-lo na página.
-      let alunosHTML = "";
+         // Variável que vai montar todo o HTML antes de inseri-lo na página.
+         let alunosHTML = "";
 
-      // Percorre cada aluno da lista.
-      for (let i = 0; i < alunos.length; i++) {
-        // Adiciona o nome do aluno dentro de um <li>.
-        alunosHTML += "<li> " + alunos[i].nome;
+         // Percorre cada aluno da lista.
+         for (let i = 0; i < alunos.length; i++) {
+            // Adiciona o nome do aluno dentro de um <li>.
+            alunosHTML += "<li> " + alunos[i].nome;
 
-        // Abre uma nova lista para mostrar as notas desse aluno.
-        alunosHTML += "<ul>";
+            // Abre uma nova lista para mostrar as notas desse aluno.
+            alunosHTML += "<ul>";
 
-        // Percorre todas as notas do aluno atual.
-        for (let j = 0; j < alunos[i].notas.length; j++) {
-          // Adiciona cada nota como um novo item da lista.
-          alunosHTML += "<li> " + alunos[i].notas[j] + "</li>";
-        }
+            // Percorre todas as notas do aluno atual.
+            for (let j = 0; j < alunos[i].notas.length; j++) {
+               // Adiciona cada nota como um novo item da lista.
+               alunosHTML += "<li> " + alunos[i].notas[j] + "</li>";
+            }
 
-        // Fecha a lista das notas.
-        alunosHTML += "</ul>";
+            // Fecha a lista das notas.
+            alunosHTML += "</ul>";
 
-        // Fecha o item que contém o nome do aluno.
-        alunosHTML += "</li>";
-      }
+            // Fecha o item que contém o nome do aluno.
+            alunosHTML += "</li>";
+         }
 
-      // Insere todo o HTML montado dentro da lista da página.
-      listaAlunos.innerHTML = alunosHTML;
-    </script>
-  </body>
+         // Insere todo o HTML montado dentro da lista da página.
+         listaAlunos.innerHTML = alunosHTML;
+      </script>
+   </body>
 </html>

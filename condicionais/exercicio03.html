@@ -1,59 +1,59 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Desafio 02</title>
-  </head>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Desafio 02</title>
+   </head>
 
-  <body>
-    <h1>Desafio 02</h1>
+   <body>
+      <h1>Desafio 02</h1>
 
-    <script>
-      // O operador || significa "OU".
-      // Basta uma das condições ser verdadeira para que o resultado seja true.
-      //
-      // Neste primeiro if, verificamos se alguma das notas está fora do
-      // intervalo permitido de 0 a 10.
-      //
-      // Se n1 for maior que 10 OU n2 for maior que 10 OU n1 for menor que 0
-      // OU n2 for menor que 0, o usuário receberá uma mensagem de erro.
-      //
-      // Caso todas essas condições sejam falsas, significa que as duas notas
-      // estão dentro do intervalo permitido e o programa continua para o else.
-      //
-      // Depois, outro if verifica as condições necessárias para a aprovação.
-      // O operador && significa "E", portanto todas as condições precisam
-      // ser verdadeiras para que o resultado seja true.
-      //
-      // Existem duas formas de fazer a primeira verificação.
-      // A primeira utiliza || para procurar valores que estão FORA do intervalo.
-      // A segunda utiliza && para verificar se os dois valores estão DENTRO
-      // do intervalo.
-      //
-      // As duas formas produzem o mesmo resultado, mas a lógica das condições
-      // é escrita de maneira diferente.
+      <script>
+         // O operador || significa "OU".
+         // Basta uma das condições ser verdadeira para que o resultado seja true.
+         //
+         // Neste primeiro if, verificamos se alguma das notas está fora do
+         // intervalo permitido de 0 a 10.
+         //
+         // Se n1 for maior que 10 OU n2 for maior que 10 OU n1 for menor que 0
+         // OU n2 for menor que 0, o usuário receberá uma mensagem de erro.
+         //
+         // Caso todas essas condições sejam falsas, significa que as duas notas
+         // estão dentro do intervalo permitido e o programa continua para o else.
+         //
+         // Depois, outro if verifica as condições necessárias para a aprovação.
+         // O operador && significa "E", portanto todas as condições precisam
+         // ser verdadeiras para que o resultado seja true.
+         //
+         // Existem duas formas de fazer a primeira verificação.
+         // A primeira utiliza || para procurar valores que estão FORA do intervalo.
+         // A segunda utiliza && para verificar se os dois valores estão DENTRO
+         // do intervalo.
+         //
+         // As duas formas produzem o mesmo resultado, mas a lógica das condições
+         // é escrita de maneira diferente.
 
-      let n1 = parseFloat(prompt("dígite a nota 1"));
-      let n2 = parseFloat(prompt("dígite a nota 2"));
+         let n1 = parseFloat(prompt("dígite a nota 1"));
+         let n2 = parseFloat(prompt("dígite a nota 2"));
 
-      // Verifica se alguma nota está fora do intervalo de 0 a 10.
-      if (n1 > 10 || n2 > 10 || n1 < 0 || n2 < 0) {
-        alert("Dígite apenas números entre 0 e 10");
-      } else {
-        // Como as notas são válidas, calcula a média.
-        let media = (n1 + n2) / 2;
+         // Verifica se alguma nota está fora do intervalo de 0 a 10.
+         if (n1 > 10 || n2 > 10 || n1 < 0 || n2 < 0) {
+            alert("Dígite apenas números entre 0 e 10");
+         } else {
+            // Como as notas são válidas, calcula a média.
+            let media = (n1 + n2) / 2;
 
-        // Todas as condições precisam ser verdadeiras para a aprovação:
-        // a média deve ser maior que 4 e as duas notas devem ser maiores que 0.
-        if (media > 4 && n1 > 0 && n2 > 0) {
-          alert("APROVADO");
-        } else {
-          alert("REPROVADO");
-        }
-      }
+            // Todas as condições precisam ser verdadeiras para a aprovação:
+            // a média deve ser maior que 4 e as duas notas devem ser maiores que 0.
+            if (media > 4 && n1 > 0 && n2 > 0) {
+               alert("APROVADO");
+            } else {
+               alert("REPROVADO");
+            }
+         }
 
-      /*
+         /*
       Segunda forma de fazer a mesma verificação.
 
       Aqui usamos && para verificar se as duas notas estão dentro
@@ -84,6 +84,6 @@
         alert("Dígite apenas números 0 e 10");
       }
       */
-    </script>
-  </body>
+      </script>
+   </body>
 </html>

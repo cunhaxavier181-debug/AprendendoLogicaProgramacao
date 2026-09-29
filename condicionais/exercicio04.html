@@ -1,18 +1,18 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exercicio 04</title>
-  </head>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Exercicio 04</title>
+   </head>
 
-  <body>
-    <h1>Exercicio 04</h1>
+   <body>
+      <h1>Exercicio 04</h1>
 
-    <script>
-      // Primeira forma de validar as notas:
-      // verifica se alguma delas está fora do intervalo de 0 a 10.
-      /*
+      <script>
+         // Primeira forma de validar as notas:
+         // verifica se alguma delas está fora do intervalo de 0 a 10.
+         /*
       let n1 = parseFloat(prompt("dígite a nota 1")); 
       let n2 = parseFloat(prompt("dígite a nota 2")); 
 
@@ -29,34 +29,34 @@
       }
       */
 
-      // Como usamos && (E), todas as condições precisam ser verdadeiras.
-      // Se uma delas for false, o if inteiro será false e o else será executado.
-      //
-      // !isNaN() verifica se o valor é um número válido.
-      let n1 = parseFloat(prompt("dígite a nota 1"));
-      let n2 = parseFloat(prompt("dígite a nota 2"));
+         // Como usamos && (E), todas as condições precisam ser verdadeiras.
+         // Se uma delas for false, o if inteiro será false e o else será executado.
+         //
+         // !isNaN() verifica se o valor é um número válido.
+         let n1 = parseFloat(prompt("dígite a nota 1"));
+         let n2 = parseFloat(prompt("dígite a nota 2"));
 
-      if (
-        n1 <= 10 &&
-        n2 <= 10 &&
-        n1 >= 0 &&
-        n2 >= 0 &&
-        !isNaN(n1) &&
-        !isNaN(n2)
-      ) {
-        // As notas são válidas, então calculamos a média.
-        let media = (n1 + n2) / 2;
+         if (
+            n1 <= 10 &&
+            n2 <= 10 &&
+            n1 >= 0 &&
+            n2 >= 0 &&
+            !isNaN(n1) &&
+            !isNaN(n2)
+         ) {
+            // As notas são válidas, então calculamos a média.
+            let media = (n1 + n2) / 2;
 
-        // Todas as condições precisam ser verdadeiras para a aprovação.
-        if (media > 4 && n1 > 0 && n2 > 0) {
-          alert("APROVADO");
-        } else {
-          alert("REPROVADO");
-        }
-      } else {
-        // Executado quando alguma condição da validação for falsa.
-        alert("Dígite apenas números 0 e 10");
-      }
-    </script>
-  </body>
+            // Todas as condições precisam ser verdadeiras para a aprovação.
+            if (media > 4 && n1 > 0 && n2 > 0) {
+               alert("APROVADO");
+            } else {
+               alert("REPROVADO");
+            }
+         } else {
+            // Executado quando alguma condição da validação for falsa.
+            alert("Dígite apenas números 0 e 10");
+         }
+      </script>
+   </body>
 </html>

@@ -1,38 +1,38 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
 
-  <body>
-    <h1>Desafio</h1>
+   <body>
+      <h1>Desafio</h1>
 
-    <script>
-      // Cria um loop que começa em 0 e vai até 100.
-      for (let i = 0; i <= 100; i++) {
-        // Verifica se i é múltiplo de 10.
-        if (i % 10 === 0) {
-          // Pula a repetição atual quando i for múltiplo de 10.
-          continue;
-        }
+      <script>
+         // Cria um loop que começa em 0 e vai até 100.
+         for (let i = 0; i <= 100; i++) {
+            // Verifica se i é múltiplo de 10.
+            if (i % 10 === 0) {
+               // Pula a repetição atual quando i for múltiplo de 10.
+               continue;
+            }
 
-        // Exibe o número atual no console.
-        console.log(i);
+            // Exibe o número atual no console.
+            console.log(i);
 
-        // Sorteia um número inteiro entre 1 e 100.
-        let sorteio = parseInt(Math.random() * 100) + 1;
+            // Sorteia um número inteiro entre 1 e 100.
+            let sorteio = parseInt(Math.random() * 100) + 1;
 
-        // Exibe no console o número que foi sorteado.
-        console.log("sorteou", sorteio);
+            // Exibe no console o número que foi sorteado.
+            console.log("sorteou", sorteio);
 
-        // Verifica se i é divisível pelo número sorteado.
-        if (i % sorteio === 0) {
-          // Encerra completamente o loop quando i for divisível pelo sorteio.
-          break;
-        }
-      }
-    </script>
-  </body>
+            // Verifica se i é divisível pelo número sorteado.
+            if (i % sorteio === 0) {
+               // Encerra completamente o loop quando i for divisível pelo sorteio.
+               break;
+            }
+         }
+      </script>
+   </body>
 </html>

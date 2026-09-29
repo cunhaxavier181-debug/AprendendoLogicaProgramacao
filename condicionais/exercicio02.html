@@ -1,38 +1,38 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exercício 0255</title>
-  </head>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Exercício 0255</title>
+   </head>
 
-  <body>
-    <h1>Exercício 02</h1>
+   <body>
+      <h1>Exercício 02</h1>
 
-    <script>
-      // Solicita ao usuário duas notas através do prompt.
-      // O parseFloat() converte o valor digitado, que inicialmente é uma string,
-      // para um número decimal.
-      let n1 = parseFloat(prompt("dígite a nota 1"));
-      let n2 = parseFloat(prompt("dígite a nota 2"));
+      <script>
+         // Solicita ao usuário duas notas através do prompt.
+         // O parseFloat() converte o valor digitado, que inicialmente é uma string,
+         // para um número decimal.
+         let n1 = parseFloat(prompt("dígite a nota 1"));
+         let n2 = parseFloat(prompt("dígite a nota 2"));
 
-      // Calcula a média das duas notas.
-      let media = (n1 + n2) / 2;
+         // Calcula a média das duas notas.
+         let media = (n1 + n2) / 2;
 
-      // O if verifica se a média é maior que 4.
-      // Se a condição for verdadeira (true), o bloco do if será executado.
-      if (media > 4) {
-        alert("APROVADO!");
+         // O if verifica se a média é maior que 4.
+         // Se a condição for verdadeira (true), o bloco do if será executado.
+         if (media > 4) {
+            alert("APROVADO!");
 
-        // O else será executado quando a condição do if for falsa (false).
-        // Portanto, se a média for menor ou igual a 4, o aluno será reprovado.
-      } else {
-        alert("REPROVADO!");
-      }
+            // O else será executado quando a condição do if for falsa (false).
+            // Portanto, se a média for menor ou igual a 4, o aluno será reprovado.
+         } else {
+            alert("REPROVADO!");
+         }
 
-      // Como este alert está fora do if e do else,
-      // ele será executado independentemente do resultado da média.
-      alert("FIM DO PROGRAMA!");
-    </script>
-  </body>
+         // Como este alert está fora do if e do else,
+         // ele será executado independentemente do resultado da média.
+         alert("FIM DO PROGRAMA!");
+      </script>
+   </body>
 </html>

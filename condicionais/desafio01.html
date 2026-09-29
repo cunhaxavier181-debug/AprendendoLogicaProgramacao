@@ -1,39 +1,39 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Desafio</title>
-  </head>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Desafio</title>
+   </head>
 
-  <body>
-    <h1>Desafio</h1>
+   <body>
+      <h1>Desafio</h1>
 
-    <script>
-      // Solicita duas notas ao usuário e converte os valores digitados
-      // de texto (string) para números decimais (number).
-      let n1 = parseFloat(prompt("dígite a nota 1"));
-      let n2 = parseFloat(prompt("dígite a nota 2"));
+      <script>
+         // Solicita duas notas ao usuário e converte os valores digitados
+         // de texto (string) para números decimais (number).
+         let n1 = parseFloat(prompt("dígite a nota 1"));
+         let n2 = parseFloat(prompt("dígite a nota 2"));
 
-      // Calcula a média somando as duas notas e dividindo o resultado por 2.
-      let media = (n1 + n2) / 2;
+         // Calcula a média somando as duas notas e dividindo o resultado por 2.
+         let media = (n1 + n2) / 2;
 
-      // O operador && significa "E".
-      // Portanto, todas as condições precisam ser verdadeiras para que
-      // o código entre no bloco do if.
-      //
-      // A aprovação acontece somente quando:
-      // 1. A média é maior que 4.
-      // 2. A primeira nota é maior que 0.
-      // 3. A segunda nota é maior que 0.
-      //
-      // Se qualquer uma dessas condições for falsa, o código executará
-      // o bloco else e exibirá "REPROVADO".
-      if (media > 4 && n1 > 0 && n2 > 0) {
-        alert("APROVADO");
-      } else {
-        alert("REPROVADO");
-      }
-    </script>
-  </body>
+         // O operador && significa "E".
+         // Portanto, todas as condições precisam ser verdadeiras para que
+         // o código entre no bloco do if.
+         //
+         // A aprovação acontece somente quando:
+         // 1. A média é maior que 4.
+         // 2. A primeira nota é maior que 0.
+         // 3. A segunda nota é maior que 0.
+         //
+         // Se qualquer uma dessas condições for falsa, o código executará
+         // o bloco else e exibirá "REPROVADO".
+         if (media > 4 && n1 > 0 && n2 > 0) {
+            alert("APROVADO");
+         } else {
+            alert("REPROVADO");
+         }
+      </script>
+   </body>
 </html>

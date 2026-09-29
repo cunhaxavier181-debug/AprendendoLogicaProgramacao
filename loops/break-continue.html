@@ -1,92 +1,92 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>break vs continue</h1>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <h1>break vs continue</h1>
 
-    <script>
-      // Cria um loop que começa em 1 e continua enquanto i for menor que 10.
-      // A cada repetição, i aumenta 1.
-      for (let i = 1; i < 10; i++) {
-        // Exibe o valor atual de i no console.
-        console.log(i);
+      <script>
+         // Cria um loop que começa em 1 e continua enquanto i for menor que 10.
+         // A cada repetição, i aumenta 1.
+         for (let i = 1; i < 10; i++) {
+            // Exibe o valor atual de i no console.
+            console.log(i);
 
-        // Verifica se i chegou ao valor 5.
-        if (i === 5) {
-          // Encerra completamente o loop quando i for igual a 5.
-          break;
-        }
-      }
+            // Verifica se i chegou ao valor 5.
+            if (i === 5) {
+               // Encerra completamente o loop quando i for igual a 5.
+               break;
+            }
+         }
 
-      // Exibe uma mensagem depois que o loop é encerrado.
-      console.log("fim do loop com break");
+         // Exibe uma mensagem depois que o loop é encerrado.
+         console.log("fim do loop com break");
 
-      // Cria outro loop que começa em 1 e continua enquanto i for menor que 10.
-      for (let i = 1; i < 10; i++) {
-        // Verifica se i chegou ao valor 5.
-        if (i === 5) {
-          // Pula a repetição atual e continua o loop.
-          continue;
-        }
+         // Cria outro loop que começa em 1 e continua enquanto i for menor que 10.
+         for (let i = 1; i < 10; i++) {
+            // Verifica se i chegou ao valor 5.
+            if (i === 5) {
+               // Pula a repetição atual e continua o loop.
+               continue;
+            }
 
-        // Exibe o valor de i no console.
-        console.log(i);
-      }
+            // Exibe o valor de i no console.
+            console.log(i);
+         }
 
-      // Exibe uma mensagem depois que o loop termina.
-      console.log("fim do loop continue");
+         // Exibe uma mensagem depois que o loop termina.
+         console.log("fim do loop continue");
 
-      // Exibe uma mensagem indicando o início dos exemplos com while.
-      console.log("--------  loop while");
+         // Exibe uma mensagem indicando o início dos exemplos com while.
+         console.log("--------  loop while");
 
-      // Cria a variável x e atribui o valor inicial 1.
-      let x = 1;
+         // Cria a variável x e atribui o valor inicial 1.
+         let x = 1;
 
-      // Executa o loop enquanto x for menor que 10.
-      while (x < 10) {
-        // Exibe o valor atual de x no console.
-        console.log(x);
+         // Executa o loop enquanto x for menor que 10.
+         while (x < 10) {
+            // Exibe o valor atual de x no console.
+            console.log(x);
 
-        // Verifica se x chegou ao valor 5.
-        if (x === 5) {
-          // Encerra completamente o loop.
-          break;
-        }
+            // Verifica se x chegou ao valor 5.
+            if (x === 5) {
+               // Encerra completamente o loop.
+               break;
+            }
 
-        // Aumenta o valor de x em 1.
-        x++;
-      }
+            // Aumenta o valor de x em 1.
+            x++;
+         }
 
-      // Exibe uma mensagem depois que o loop é encerrado.
-      console.log("fim do loop while com break");
+         // Exibe uma mensagem depois que o loop é encerrado.
+         console.log("fim do loop while com break");
 
-      // Atribui novamente o valor 1 à variável x.
-      x = 1;
+         // Atribui novamente o valor 1 à variável x.
+         x = 1;
 
-      // Executa o loop enquanto x for menor que 10.
-      while (x < 10) {
-        // Verifica se x chegou ao valor 5.
-        if (x === 5) {
-          // Aumenta x em 1 antes de continuar para evitar um loop infinito.
-          x++;
+         // Executa o loop enquanto x for menor que 10.
+         while (x < 10) {
+            // Verifica se x chegou ao valor 5.
+            if (x === 5) {
+               // Aumenta x em 1 antes de continuar para evitar um loop infinito.
+               x++;
 
-          // Pula o restante da repetição atual e volta para a condição do while.
-          continue;
-        }
+               // Pula o restante da repetição atual e volta para a condição do while.
+               continue;
+            }
 
-        // Exibe o valor atual de x no console.
-        console.log(x);
+            // Exibe o valor atual de x no console.
+            console.log(x);
 
-        // Aumenta o valor de x em 1.
-        x++;
-      }
+            // Aumenta o valor de x em 1.
+            x++;
+         }
 
-      // Exibe uma mensagem depois que o loop termina.
-      console.log("fim do loop while com continue");
-    </script>
-  </body>
+         // Exibe uma mensagem depois que o loop termina.
+         console.log("fim do loop while com continue");
+      </script>
+   </body>
 </html>

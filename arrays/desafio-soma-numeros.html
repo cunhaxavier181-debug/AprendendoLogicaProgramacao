@@ -1,21 +1,21 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Desafio</title>
-  </head>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Desafio</title>
+   </head>
 
-  <body>
-    <h1>Desafio</h1>
+   <body>
+      <h1>Desafio</h1>
 
-    <script>
-      /* ==================================================================== 
+      <script>
+         /* ==================================================================== 
         DESAFIO: 
         Dado um array de números, mostre num alert a soma de todos eles 
         ==================================================================== */
 
-      /* ====================================================================  
+         /* ====================================================================  
         primeira interação: 
         i = 0   ; soma = 0  ; n = 2 ; 
         segunda interação: 
@@ -23,23 +23,23 @@
         e assim por diante...  
         ==================================================================== */
 
-      // Array contendo os números que serão somados
-      const numeros = [2, 5, 6, 3, 85, 98, 165];
+         // Array contendo os números que serão somados
+         const numeros = [2, 5, 6, 3, 85, 98, 165];
 
-      // Variável que começa com zero e armazenará a soma
-      let soma = 0;
+         // Variável que começa com zero e armazenará a soma
+         let soma = 0;
 
-      // Percorre todos os elementos do array
-      for (let i = 0; i < numeros.length; i++) {
-        // Pega o número que está na posição atual do array
-        let n = numeros[i];
+         // Percorre todos os elementos do array
+         for (let i = 0; i < numeros.length; i++) {
+            // Pega o número que está na posição atual do array
+            let n = numeros[i];
 
-        // Adiciona o valor de n à variável soma
-        soma += n;
-      }
+            // Adiciona o valor de n à variável soma
+            soma += n;
+         }
 
-      // Exibe o resultado final da soma
-      alert("A soma dos números é " + soma);
-    </script>
-  </body>
+         // Exibe o resultado final da soma
+         alert("A soma dos números é " + soma);
+      </script>
+   </body>
 </html>
