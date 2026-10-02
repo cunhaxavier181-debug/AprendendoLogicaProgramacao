@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Desafios</title>
+   </head>
+
+   <body>
+      <script>
+         // Recebe dois números e retorna a soma deles.
+         function somar(n1, n2) {
+            return n1 + n2;
+         }
+
+         // Chama a função e guarda o resultado retornado.
+         // console.log(somar(10, 18));
+
+         let resutaldo = somar(10, 18);
+
+         // Exibe o valor retornado pela função.
+         console.log(resutaldo);
+
+         // Recebe dois números e um símbolo para escolher a operação.
+         function calcular(n1, n2, simbolo) {
+            // Verifica qual operação foi solicitada.
+            switch (simbolo) {
+               // Se o símbolo for "+", soma os números.
+               case "+":
+                  return n1 + n2;
+
+               // Se o símbolo for "-", subtrai os números.
+               case "-":
+                  return n1 - n2;
+
+               // Se o símbolo for "*", multiplica os números.
+               case "*":
+                  return n1 * n2;
+
+               // Se o símbolo for "/", divide os números.
+               case "/":
+                  return n1 / n2;
+
+               // Se nenhum símbolo for reconhecido, retorna null.
+               default:
+                  return null;
+            }
+         }
+
+         // Testa a função usando a operação de soma.
+         console.log(calcular(2, 4, "+"));
+
+         // Testa a função usando a operação de subtração.
+         console.log(calcular(5, 2, "-"));
+
+         // Testa a função usando a operação de multiplicação.
+         console.log(calcular(20, 4, "*"));
+
+         // Testa a função usando a operação de divisão.
+         console.log(calcular(25, 4, "/"));
+
+         // Testa o que acontece quando o símbolo não é reconhecido.
+         console.log(calcular(25, 4, "a"));
+
+         // Recebe um número e retorna true se ele for par.
+         function ehPar(n) {
+            // O resto da divisão por 2 deve ser zero para o número ser par.
+            return n % 2 == 0;
+         }
+
+         // Verifica se 5 é par.
+         console.log(ehPar(5));
+
+         // Verifica se 4 é par.
+         console.log(ehPar(4));
+
+         // Recebe um ano e verifica se ele é bissexto.
+         function ehBissexto(ano) {
+            // Ano divisível por 4 e que não seja século,
+            // ou que seja divisível por 400.
+            return ano % 4 === 0 && (ano % 100 !== 0 || ano % 400 === 0);
+         }
+
+         // Verifica se 2000 é bissexto.
+         console.log(ehBissexto(2000));
+
+         // Verifica se 1800 é bissexto.
+         console.log(ehBissexto(1800));
+      </script>
+   </body>
+</html>
