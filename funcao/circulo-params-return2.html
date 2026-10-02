@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Área do circulo</title>
+   </head>
+
+   <body>
+      <h1>Área do circulo</h1>
+
+      <label>Raio <input type="number" id="raio" /> </label><br /><br />
+
+      <button onclick="mostrarAreaDoPromptAlert()">
+         Calcular a área do Prompt e mostrar no alert
+      </button>
+      <br /><br />
+
+      <button onclick="mostrarAreaDoInputAlert()">
+         Calcular a área do Input e mostrar no alert
+      </button>
+
+      <br /><br />
+
+      <button onclick="mostrarAreaDoPromptOutput()">
+         Calcular a área do Prompt e mostrar no output</button
+      ><br /><br />
+
+      <button onclick="mostrarAreaDoInputOutput()">
+         Calcular a área do Input e mostrar no output
+      </button>
+
+      <output id="output"></output>
+
+      <script>
+         // Captura o campo onde o usuário informa o raio.
+         const raio = document.getElementById("raio");
+
+         // Captura o elemento onde o resultado será exibido.
+         const output = document.getElementById("output");
+
+         // Pega o raio pelo prompt e mostra a área em um alert.
+         function mostrarAreaDoPromptAlert() {
+            // Solicita o raio e converte o valor para número decimal.
+            let raio = parseFloat(prompt("dígite o raio"));
+
+            // Envia o raio para a função de cálculo e recebe a área.
+            let area = calcularArea(raio);
+
+            // Exibe uma mensagem com o raio e a área calculada.
+            alert(
+               `A área da circunferência de raio ${raio} vindo do meu primeiro prompt é: ${area}`,
+            );
+         }
+
+         // Pega o raio pelo input e mostra a área em um alert.
+         function mostrarAreaDoInputAlert() {
+            // Pega o valor do input e converte para número decimal.
+            let raioInput = parseFloat(raio.value);
+
+            // Envia o raio para a função de cálculo e recebe a área.
+            let area = calcularArea(raioInput);
+
+            // Exibe uma mensagem com o raio e a área calculada.
+            alert(
+               `A área da circunferência de raio ${raioInput} vindo do meu primeiro input é: ${area}`,
+            );
+         }
+
+         // Pega o raio pelo prompt e mostra a área na página.
+         function mostrarAreaDoPromptOutput() {
+            // Solicita o raio e converte o valor para número decimal.
+            let raio = parseFloat(prompt("dígite o raio"));
+
+            // Envia o raio para a função de cálculo e recebe a área.
+            let area = calcularArea(raio);
+
+            // Exibe uma mensagem com o raio e a área calculada.
+            output.innerHTML = `A área da circunferência de raio ${raio} vindo do meu segundo prompt é: ${area}`;
+         }
+
+         // Pega o raio pelo input e mostra a área na página.
+         function mostrarAreaDoInputOutput() {
+            // Pega o valor do input e converte para número decimal.
+            let raioInput = parseFloat(raio.value);
+
+            // Envia o raio para a função de cálculo e recebe a área.
+            let area = calcularArea(raioInput);
+
+            // Exibe uma mensagem com o raio e a área calculada.
+            output.innerHTML = `A área da circunferência de raio ${raioInput} vindo do meu segundo input é: ${area}`;
+         }
+
+         // Recebe o raio, calcula a área e retorna apenas o resultado.
+         function calcularArea(raio) {
+            // Aplica a fórmula da área da circunferência.
+            let area = Math.PI * raio ** 2;
+
+            // Devolve o valor calculado para quem chamou a função.
+            return area;
+         }
+      </script>
+   </body>
+</html>
