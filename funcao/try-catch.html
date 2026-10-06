@@ -12,36 +12,71 @@
       <div id="output"></div>
 
       <script>
+         // Cria um objeto com nome e e-mail.
          let obj = { nome: "Marcos", email: "cunhaxavier181@gmail.com" };
 
+         // Tenta executar um código que pode gerar um erro.
          try {
+            // Acessa os dados do objeto e exibe no elemento "output".
             document.getElementById("output").innerHTML =
                `Nome: ${obj.nome} - Email: ${obj.email}`;
+
+            // Se ocorrer um erro dentro do try, o catch será executado.
          } catch (e) {
+            // Mostra uma mensagem de erro para o usuário.
             alert("deu ruim!!!" + e.message);
+
+            // O finally seria executado independentemente de ocorrer erro ou não.
          } finally {
             // alert("Fim do programa");
          }
       </script>
 
+      <!-- Carrega funções que estão no arquivo externo areas.js. -->
       <script src="areas.js"></script>
 
       <script>
+         // Tenta calcular a área de um retângulo.
          try {
+            // Passa 2 e uma string para testar o comportamento da função.
             console.log(calcularAreaRetangulo(2, "hhkjhkjh"));
+
+            // Captura qualquer erro ocorrido dentro do try.
          } catch (e) {
+            // Mostra a mensagem do erro em um alert.
             alert("deu ruim " + e.message);
          }
 
+         // Tenta calcular a área de um triângulo.
          try {
+            // Chama a função e guarda o resultado retornado.
             let areaTriangulo = calcularAreaTriangulo(3, "gjhg");
 
+            // Exibe a área calculada na página.
             document.getElementById("output").innerHTML =
                `a área do triângulo é ${areaTriangulo}`;
+
+            // Captura o erro caso o cálculo não seja executado corretamente.
          } catch (e) {
+            // Mostra o objeto de erro completo no console.
             console.log(e);
          }
 
+         // Tenta calcular a área de um círculo.
+         try {
+            // Calcula a área usando um raio de 10.
+            let areaCirculo = calcularAreaCirculo(10);
+
+            // Exibe o resultado no console.
+            console.log(`a área do circulo de raio 10 é : ${areaCirculo}`);
+
+            // Captura qualquer erro ocorrido no cálculo.
+         } catch (e) {
+            // Mostra somente a mensagem do erro.
+            console.log(e.message);
+         }
+
+         // Executa no final, depois dos blocos anteriores.
          alert("fim do programa");
       </script>
    </body>
