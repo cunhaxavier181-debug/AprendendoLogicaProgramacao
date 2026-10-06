@@ -20,8 +20,29 @@
          } catch (e) {
             alert("deu ruim!!!" + e.message);
          } finally {
-            alert("Fim do programa");
+            // alert("Fim do programa");
          }
+      </script>
+
+      <script src="areas.js"></script>
+
+      <script>
+         try {
+            console.log(calcularAreaRetangulo(2, "hhkjhkjh"));
+         } catch (e) {
+            alert("deu ruim " + e.message);
+         }
+
+         try {
+            let areaTriangulo = calcularAreaTriangulo(3, "gjhg");
+
+            document.getElementById("output").innerHTML =
+               `a área do triângulo é ${areaTriangulo}`;
+         } catch (e) {
+            console.log(e);
+         }
+
+         alert("fim do programa");
       </script>
    </body>
 </html>
