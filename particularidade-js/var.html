@@ -10,33 +10,41 @@
       <h1>var vs let vs const</h1>
 
       <script>
-         // Javascript === ECMAScript
+         // JavaScript é uma implementação da especificação ECMAScript.
 
-         // ES5 < 2015
+         // ES5: versão do ECMAScript lançada em 2009.
+         // ES6 (ES2015): trouxe recursos como let e const.
+         // ES7 (ES2016): trouxe recursos como o operador ** e includes().
 
-         // ES6 - ES2015
+         // ES5: var permite redeclarar uma variável no mesmo escopo.
+         // ES6: let e const introduziram declarações com escopo de bloco.
 
-         // ES7 - ES2016
-
-         // ES5 var
-
-         // ES6 let const
-
+         // Declara a variável teste e atribui uma string.
          var teste = "teste";
 
+         // Redeclara teste e substitui seu valor por um número.
          var teste = 1000;
 
+         // Declara e executa uma função chamada minhaFuncao.
          function minhaFuncao() {
+            // Cria um array com dois elementos.
             const arr = [1, 2];
 
+            // Declara i com o valor correspondente ao tamanho do array: 2.
             var i = arr.length;
 
+            // O var i do for redeclara a mesma variável i da função.
+            // O laço começa em 0 e continua enquanto i for menor que 5.
             for (var i = 0; i < 5; i++) {
+               // Exibe o valor atual de i a cada repetição.
                console.log(i);
             }
+
+            // Exibe o valor final de i após o término do laço.
             console.log(i);
          }
 
+         // Chama a função para executar seu conteúdo.
          minhaFuncao();
       </script>
    </body>

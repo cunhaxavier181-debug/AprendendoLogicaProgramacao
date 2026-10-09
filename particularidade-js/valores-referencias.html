@@ -24,45 +24,67 @@
       </ul>
 
       <script>
+         // Declara a variável n e atribui o valor 10.
          let n = 10;
 
+         // Recebe um parâmetro n, que funciona como uma variável local da função.
          function teste(n) {
+            // Incrementa o n interno em 1 e exibe o resultado.
             console.log("n interno funcao teste", ++n);
          }
 
+         // Passa o valor de n para a função teste.
          teste(n);
 
+         // Exibe o n externo, que continua valendo 10.
          console.log("n externo", n);
 
+         // Cria um array com três elementos.
          const arr = [1, 2, 3];
 
+         // Cria outro array com três elementos.
          const arr2 = [4, 5, 6];
 
+         // Recebe um valor e um array como parâmetros.
          function adicionarNaArray(valor, arr) {
+            // Adiciona o valor ao final do array.
             arr[arr.length] = valor;
          }
 
+         // Recebe um array como parâmetro.
          function limpaArray(arr) {
+            // Altera o tamanho do array para zero, removendo todos os elementos.
             arr.length = 0;
          }
 
+         // Exibe o conteúdo atual do array arr.
          console.log(arr);
 
+         // Remove todos os elementos do array arr.
          limpaArray(arr);
+
+         // Adiciona a string "novovalor" ao array que agora está vazio.
          adicionarNaArray("novovalor", arr);
 
+         // Exibe o conteúdo atualizado do array arr.
          console.log(arr);
 
+         // Cria um objeto com a propriedade nome.
          const obj = { nome: "Marcos" };
 
+         // Recebe o nome da propriedade, o valor e o objeto.
          function adicionarPropEmObjeto(prop, valor, obj) {
+            // Verifica se a propriedade ainda não possui valor definido.
             if (obj[prop] === undefined) {
+               // Cria a propriedade no objeto e atribui o valor recebido.
                obj[prop] = valor;
             }
          }
 
+         // Adiciona a propriedade sobrenome ao objeto, caso esteja undefined.
          adicionarPropEmObjeto("sobrenome", "Marcos", obj);
 
+         // Exibe o objeto atualizado.
          console.log(obj);
       </script>
    </body>

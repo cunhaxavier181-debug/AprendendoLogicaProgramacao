@@ -10,24 +10,40 @@
       <h1>Curto circuito</h1>
 
       <script>
+         // Declara a variável n com o valor 20.
          let n = 20;
 
+         // Como n é truthy, o operador && retorna o valor 10.
          n = n && 10;
 
+         // Converte o número para uma string na base hexadecimal (base 16).
          n = n.toString(16);
+
+         // Exibe o valor convertido e seu tipo.
          console.log(n, typeof n);
+
+         // Atribui novamente o número 10 à variável.
          n = 10;
 
+         // Converte o número para uma string na base binária (base 2).
          n = n.toString(2);
+
+         // Exibe o valor convertido e seu tipo.
          console.log(n, typeof n);
 
+         // Define uma função que recebe um parâmetro opcional.
          function teste(param) {
+            // Usa 10 como padrão somente se param for undefined.
             param = param !== undefined ? param : 10;
 
+            // Exibe o valor recebido ou o valor padrão.
             console.log(param);
          }
 
+         // Sem argumento, param recebe undefined e assume o valor 10.
          teste();
+
+         // Como 0 não é undefined, o valor 0 é mantido.
          teste(0);
       </script>
    </body>
