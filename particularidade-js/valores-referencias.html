@@ -46,10 +46,24 @@
             arr.length = 0;
          }
 
+         console.log(arr);
+
+         limpaArray(arr);
          adicionarNaArray("novovalor", arr);
 
          console.log(arr);
-         limpaArray(arr);
+
+         const obj = { nome: "Marcos" };
+
+         function adicionarPropEmObjeto(prop, valor, obj) {
+            if (obj[prop] === undefined) {
+               obj[prop] = valor;
+            }
+         }
+
+         adicionarPropEmObjeto("sobrenome", "Marcos", obj);
+
+         console.log(obj);
       </script>
    </body>
 </html>
