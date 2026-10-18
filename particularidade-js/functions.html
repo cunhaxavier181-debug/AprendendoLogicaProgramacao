@@ -10,25 +10,64 @@
       <h1>Functions</h1>
 
       <script>
-         // functions declarations
-
+         // FUNCTION DECLARATION
+         // Declara uma função usando a palavra-chave function.
          function ola1(nome) {
-            console.log(`olá de function declaration ${nome}`);
+            // Exibe uma mensagem concatenando o texto com o parâmetro nome.
+            console.log("ola de function declaration, " + nome);
          }
 
-         // functions expressions
+         // Chama a função e passa "marcos" como argumento.
+         ola1("marcos");
 
+         // FUNCTION EXPRESSION
+         // Armazena uma função anônima dentro de uma constante.
          const ola2 = function (nome) {
-            console.log("olá de function expression, " + nome);
+            // Exibe uma mensagem concatenando o texto com o parâmetro nome.
+            console.log("ola de function expression, " + nome);
          };
 
+         // Chama a função e passa "millena" como argumento.
+         ola2("millena");
+
+         // ARRAY CONTENDO FUNÇÕES
+         // As funções também podem ser armazenadas em arrays.
          const arr = [
             ola1,
             ola2,
             function () {
-               console.log("function anonima dentro de array executada");
+               // Função anônima que não recebe parâmetros.
+               console.log("funcao anonima dentro de array executada");
             },
          ];
+
+         // Acessa a função armazenada na posição 2 do array.
+         // Para executá-la, é necessário adicionar os parênteses:
+         arr[2]();
+
+         // ARROW FUNCTION
+         // Cria uma função usando a sintaxe de seta (=>).
+         const ola3 = (nome) => {
+            // Exibe uma mensagem usando o parâmetro recebido.
+            console.log("ola de arrow function, " + nome);
+         };
+
+         // Chama a função e passa uma mensagem como argumento.
+         ola3("eu sou uma arrow function");
+
+         // ARROW FUNCTION COM DOIS PARÂMETROS
+         // Recebe n1 e n2 e retorna a soma dos dois valores.
+         const soma = (n1, n2) => n1 + n2;
+
+         // Chama a função com 7 e 3 e exibe o resultado.
+         console.log(soma(7, 3));
+
+         // ARROW FUNCTION COM RETORNO IMPLÍCITO
+         // Multiplica o parâmetro n por 2 e retorna o resultado.
+         const multiplicaPorDois = (n) => n * 2;
+
+         // Exibe o resultado de 7 * 2.
+         console.log(multiplicaPorDois(7));
       </script>
    </body>
 </html>
