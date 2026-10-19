@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Vetor, Array, Lista e Matriz</title>
+   </head>
+
+   <body>
+      <h1>Vetor, Array, Lista e Matriz</h1>
+
+      <script>
+         // Cria uma matriz com 3 arrays internos, cada um contendo 4 notas.
+         const notas = [
+            [3, 5, 6, 1], // Notas do primeiro aluno.
+            [2, 8, 4, 9], // Notas do segundo aluno.
+            [10, 3, 5, 7], // Notas do terceiro aluno.
+         ];
+
+         // Acessa o segundo array e, dentro dele, o terceiro elemento.
+         // Índices começam em 0: notas[1][2] retorna 4.
+         console.log(notas[1][2]);
+
+         // Acessa o terceiro array e, dentro dele, o segundo elemento.
+         // notas[2][1] retorna 3.
+         console.log(notas[2][1]);
+
+         // Percorre os arrays internos da matriz.
+         // A variável i representa o índice do aluno.
+         for (let i = 0; i < notas.length; i++) {
+            // Guarda em notasAluno o array de notas do aluno atual.
+            const notasAluno = notas[i];
+
+            // Exibe todas as notas do aluno atual em formato de array.
+            console.log(notasAluno);
+
+            // Percorre individualmente as notas do aluno atual.
+            // A variável j representa o índice de cada nota.
+            for (let j = 0; j < notasAluno.length; j++) {
+               // Exibe a nota atual usando o array armazenado em notasAluno.
+               console.log(notasAluno[j]);
+
+               // Exibe a mesma nota acessando diretamente a matriz:
+               // primeiro pelo aluno (i), depois pela nota (j).
+               console.log(notas[i][j]); // Acesso a elementos da matriz.
+            }
+         }
+      </script>
+   </body>
+</html>
